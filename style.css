@@ -48,10 +48,15 @@ header .container {
     padding-bottom: 15px;
    
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Jost:wght@300&display=swap');
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Acme', sans-serif;
+font-family: 'Jost', sans-serif;
+    gap: 5px;
 }
 
 .logo img{
