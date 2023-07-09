@@ -395,12 +395,20 @@ line-height: normal;
     .container {
         width: 95%;
     }
-
+ 
 }
 
 @media screen and (max-width: 600px) {
     .container {
         width: 100%;
+    }
+
+    .paymentgateway .imgs{
+    
+
+        height: 130px;
+        width: 120px;
+        z-index: 99999;
     }
 
 }
@@ -488,5 +496,23 @@ line-height: normal;
         }
         .section .container{
             gap: 60px;
+        }
+
+        .topsection {
+            text-align: center;
+            font-size: 15px;
+        }
+        .bottomsection {
+            color: #54535C;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+
+      .paymentgateway  .imgs{
+            width: 64px;
+            height: 64px;
+        }
+        .paymentgateway{
+            margin-bottom: 80px;
         }
     }
