@@ -515,4 +515,7 @@ line-height: normal;
         .paymentgateway{
             margin-bottom: 80px;
         }
+        .topsection{
+            margin-top: 10px;
+        }
     }
