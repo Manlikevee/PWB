@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .none{
+    display: none;
+  }
+  nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+  }
+  .logo .menu-icon {
+    color: #333;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+  }
+  .logo .logo-name {
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  nav .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+  nav.open .sidebar {
+    left: 0;
+  }
+  .sidebar .sidebar-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+  }
+  .sidebar-content .list {
+    list-style: none;
+  }
+  .list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .lists .nav-link:hover {
+    background-color: #4070f4;
+  }
+  .nav-link .icon {
+    margin-right: 14px;
+    font-size: 20px;
+    color: #707070;
+  }
+  .nav-link .link {
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+  }
+  .lists .nav-link:hover .icon,
+  .lists .nav-link:hover .link {
+    color: #fff;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  nav.open ~ .overlay {
+    opacity: 1;
+    left: 260px;
+    pointer-events: auto;
+  }
+
+  .maincontent{
+    width: 100%;
+    display: flex;
+width: 1200px;
+margin: auto;
+  }
+
+
+  .sidebar{
+    width: 20%;
+    background-color: #fff;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .dashboarddata{
+
+  margin-top: 40px;
+    width: 100%;
+    padding: 10px;
+  }
+.dashboardcontent{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.cardsections{
+    padding: 20px;
+    width: 100%;
+
+
+}
+
+.balancecard{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.flagname{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.usd , .crypto{
+    width: 100%;
+    height: fit-content;
+    padding: 38px;
+    border-radius: 9px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.topcard{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bottomcard{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.usd{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1688141585058-50787735e064?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1688494963827-9f9dc1c51bd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-position: right;
+
+}
+.quicklink{
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.atmcard{
+    width: 60%;
+    padding: 20px;
+   
+}
+
+
+.atmbox{
+    background-color: purple;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1688494930420-694c13332f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding: 38px;
+    border-radius: 9px;
+}
+.crypto{
+    background-image: url('https://img.freepik.com/free-vector/green-abstract-halftone-background_1409-898.jpg?w=826&t=st=1688927752~exp=1688928352~hmac=3de698793dc65f6dd917aee6ec062f49043ec55fe0048e1030eb529d8420f3c9');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1688141585146-1fb4a1358c87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1688494963827-9f9dc1c51bd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+}
+.cardblock{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.transferblock{
+    display: flex;
+    gap: 20px;
+}
+.blockone{
+    width: 100%;
+  
+    padding: 10px;
+}
+.send{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background-color: white;
+    border: 1px solid #fff;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
+}
+
+.sidebarlinks a{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #222222;
+    padding: 17px;
+    transition: all 0.5s ease;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+}
+.sidebarlinks .active{
+    background-color: #4070f4;
+    border-radius: 9px;
+    color: #fff;
+
+}
+
+.send:hover{
+    cursor: pointer;
+    border: 1px solid #000;
+}
+.recieve{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background-color: white;
+    border: 1px solid #fff;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
+
+}
+.blocktwo{
+    width: 60%;
+    padding: 20px;
+    height: 100%;
+   
+}
+.search input{
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 6px;
+}
+
+.column{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 9px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.columnbody{
+    display: flex;
+    gap: 10px;
+}
+
+.iconval{
+    width: 10%;
+    padding: 7px;
+    background-color: red;
+}
+.transtype{
+    width: 100%;
+    background-color: pink;
+    padding: 7px;
+}
+
+.transamount{
+    width: 30%;
+    background-color: orange;
+    padding: 7px;
+
+}
+.names{
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: right;
+    padding-block: 6px;
+    width: 100%;
+}
+
+.nms{
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-block: 0px;
+    width: 100%; 
+}
+
+.transamount{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.transstatus{
+    
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.76);
+    
+}
+
+.column{
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+.name{
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-block: 6px;
+}
+.balancecard .name{
+    width: 100%;
+    font-size: 15px;
+}
+.profilehead{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+}
+
+.profilehead img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.flag{
+gap: 10px;   
+    justify-content: center;
+    display: flex;
+}
+.flag img{
+    height: 15px;
+}
+.pad{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.topspot{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+  .sidebardata{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .sidebarlinks  {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width:1280px) {
+ .maincontent{
+    width: 100%;
+ }   
+  }
+
+  @media screen and (max-width:1000px) {
+    .maincontent{
+       width: 100%;
+    }  
+    .cardblock {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .atmcard{
+        width: 100%;
+    } 
+    .transferblock{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;  
+    }
+     }
+
+
+     @media screen and (max-width:700px) {
+        .balancecard{
+            flex-direction: column;
+        }
+        .dashboardcontent{
+            padding: 0;
+        }
+        .cardsections{
+            padding: 4px;
+        }
+        .atmcard{
+            padding: 4px;
+        }
+        .blockone {
+            width: 100%;
+            padding: 0px;
+        }
+        
+        
+     }
