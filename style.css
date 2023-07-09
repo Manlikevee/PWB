@@ -93,6 +93,41 @@ line-height: normal;
     
 }
 
+.paymentgateway{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.paymentgateway .imgs{
+    
+    width: 105px;
+    left: 21%;
+    position: absolute;
+    height: 130px;
+    width: 120px;
+    z-index: 99999;
+}
+
+.paymentgateway .imgs1{
+    top: -90px;
+    left: 61px; 
+}
+
+.paymentgateway .imgs2{
+    top: 2px;
+    left: 361px; 
+}
+
+.paymentgateway .imgs3{
+    top: 190px;
+    left: 361px; 
+}
+
+.paymentgateway .imgs4{
+    top: 90px;
+    left: 1px; 
+}
 .boxicon{
     width: 15%;
 }
@@ -351,6 +386,10 @@ line-height: normal;
 }
 .herosection{
     height: 100vh;
+    /* background-image: url('images/bg_overlay.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 @media screen and (max-width:1200px) {
     .container {
@@ -431,7 +470,12 @@ line-height: normal;
     .section .container{
         flex-direction: column;
     }
-
+    .paymentgateway {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-bottom: 47px;
+    }
   
     }
 

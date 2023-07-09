@@ -27,3 +27,50 @@ handleScroll();
     once: true,  // Whether the animation should only happen once
     anchorPlacement: 'center',  // Defines vertical anchor placement (top, center, bottom)
   });
+
+
+  gsap.to(".imgs1", {
+    y: -20,
+    duration: 0.7,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.out"
+  }
+  
+  
+  );
+  
+  gsap.to(".imgs2", {
+    x: -20,
+    duration: 0.9,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.out"
+  }
+  
+  
+  );
+
+
+  gsap.to(".imgs3", {
+    x: -70,
+    duration: 0.8,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.out"
+  }
+  
+  
+  );
+
+
+  gsap.to(".imgs4", {
+    y: 10,
+    duration: 0.5,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.out"
+  }
+  
+  
+  );
