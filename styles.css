@@ -15,6 +15,7 @@ body{
     overflow-x: hidden;
     overflow-y: visible;
     background: #f5f5f5;
+
 }
 
 ::-webkit-scrollbar {
@@ -585,6 +586,157 @@ gap: 10px;
     width: 100%;
  }   
   }
+
+  .profiletip{
+    margin-top: 3px;
+    width: 100%;
+
+    gap: 10px;
+    border-radius: 9px;
+    padding: 20px;
+    background-color: white;
+    width: 97%;
+    margin: auto;
+    box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+    gap: 10px;
+
+  }
+
+  .ppic {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .trend {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .trends {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d73131;
+    color: #e4d3c2;
+  }
+
+  .inflow .flowmain{
+    font-family: Poppins;
+    font-weight: 600;
+ color: #155724;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .outflow .flowmain{
+    font-family: Poppins;
+    font-weight: 600;
+  color: #d73131;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  
+  .ppic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .flowsub{
+    color: #a1a1a1;
+    font-weight: 300;
+  }
+
+.timestamps{
+
+}
+.stamptop{
+    border: 1px solid #ccc;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+  .stamptop div{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #155724;
+  }
+
+  .stamptop{
+    width: fit-content;
+    padding: 3px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+
+  }
+.backticks{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+  .datetime{
+    font-size: 15px;
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: poppins;
+    line-height: 16px;
+    letter-spacing: 0em;
+  }
+.profileheading, .inflow, .outflow, .timestamp{
+    width: 100%;
+    padding: 9px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 2px solid rgb(232, 232, 232);
+}
+
+.profilename{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(16, 16, 16);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-block: 3px;
+    width: 100%;
+}
+
+.profileemail{
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-block: 3px;
+    width: 100%;
+}
+
 
   @media screen and (max-width:1000px) {
     .maincontent{
