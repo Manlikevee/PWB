@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body, *{
     margin: 0;
@@ -619,6 +619,152 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 
+
+.detailpage{
+    
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .detailbuttons{
+    margin-top: 20px;
+    background-color: white;
+    padding: 24px;
+    width: fit-content;
+    box-shadow: 0px 4px 13px 0px #00000008;
+    border-radius: 8px;
+display: flex;
+flex-direction: row;
+gap: 30px;
+  }
+  .termtitle{
+    color: var(--onyx);
+    font-weight: var(--fw-600);
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .detailindetail{
+    background-color: white;
+    padding: 24px;
+    width: 100%;
+    box-shadow: 0px 4px 13px 0px #00000008;
+    border-radius: 8px;
+display: flex;
+flex-direction: column;
+  }
+
+  .topdetail{
+    width: 100%;
+    border-bottom: 1px solid #A5ABAD;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: grid;
+  }
+  .bottomdet{
+    width: 100%;
+  }
+  .detailflex{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+.green i {
+    color: #155724;
+}
+  .topdet{
+    color: #0C231f;
+
+font-size: 14px;
+font-weight: 800;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+
+  .bottomdet{
+ margin-top: 1px;
+ font-size: 14px;
+    line-height: 1.7;
+    color: #000000E8;
+
+
+  }
+
+  .bottomdetail{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: grid;
+  }
+  .downloadreceipt{
+    padding: 20px;
+    width: 220px;
+    background-color: hsla(188, 78%, 41%, 0.12);
+    color: hsl(188, 78%, 41%);
+    border-radius: 7px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center; 
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .downloadreceipt:hover{
+    background-color: #FFE0D3;
+    color: #FD7238;
+  }
+
+  .transactionreport{
+    padding: 20px;
+    width: 220px;
+    background-color: #d73131;
+    color: #e4d3c2;
+    border-radius: 7px;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .transactionreport:hover{
+    background-color: #FFE0D3;
+    color: #FD7238;
+  }
+.pendingtalk{
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  background-color: #fff2c6c0;
+}
+
+.pendingtalk i{
+  color: darkred;
+}
+  @media screen and (max-width:600px) {
+    .detailbuttons{
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .detailbuttons div{
+      width: 100%;
+    }
+    
+  }
+
+  .green i {
+    color: #155724;
+}
+
 @media screen and (max-width:1100px) {
 
     .loginpage{
@@ -750,7 +896,7 @@ background-color: #f4f2f2;
         padding: 5px;
         display: flex;
         gap: 3px;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
       }
       
