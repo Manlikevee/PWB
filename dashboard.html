@@ -17,15 +17,15 @@
 <body>
     <header id="navbar" data-aos="fade-up">
         <div class="container">
-            <div class="logo">
-                <img src="https://cellab.netlify.app/images/finflow-logo-12%201.png" alt=""> PWB
+            <div class="logo"  onclick="window.location.href = 'index.html'">
+                <img src="Group (1).png" alt=""> PWB
             </div>
 
             <div class="links">
                 <a href="">Home</a><a href="">About-Us</a><a href="">Contact Us</a>
             </div>
 
-            <div class="login">
+            <div class="login"onclick="window.location.href = 'dashboard.html'">
                 Login
             </div>
         </div>
@@ -123,28 +123,38 @@
             <div class="cardblock">
                 <div class="cardsections">
                     <div class="balancecard">
-                        <div class="usd">
+                        <div class="usd" data-aos="fade-up">
                             <div class="topcard">
                                 <div class="flag">
                                     <div>
                                         <img src="images/united-states-flag-icon.png" alt="">
                                     </div><div class="flagname">USD Wallet Balance</div>
                                 </div>
-                                <div class="downarrow">x</div>
+                                <div class="downarrow ">
+                                  
+                                        <span class="material-symbols-outlined toggle-eye">
+                                            visibility_off
+                                            </span>
+                                </div>
                             </div>
 
                             <div class="bottomcard">
-                                $32,000.22
+                                $ <div class="content">XXX</div> 
                             </div>
                         </div>
-                        <div class="crypto">
+                        <div class="crypto" data-aos="fade-left">
                             <div class="topcard">
                                 <div class="flag">
                                     <div>
                                         <img src="images/bitcoin-icon.png" alt="">
                                     </div><div class="flagname">CRYPTO Wallet Balance</div>
                                 </div>
-                                <div class="downarrow">x</div>
+                                <div class="downarrow">
+                                    
+                                    <span class="material-symbols-outlined toggle-eye">
+                                        visibility_off
+                                        </span>
+                                </div>
                             </div>
 
                             <div class="bottomcard">
@@ -158,17 +168,67 @@
                     </div>
             
                 </div>
-    <div class="atmcard">
-        <div class="atmbox"></div>
+    <div class="atmcard" data-aos="fade-down">
+        <div class="atmbox">
+            <div class="atmtop">
+                <div class="accounttype">
+                    Savings Account
+                </div>
+                <div class="signal">
+                    <span class="material-symbols-outlined">
+                    nest_remote_comfort_sensor
+                    </span>
+                </div>
+            </div>
+
+            <div class="accountmiddle">
+                1234  4444  2222  1111
+            </div>
+
+            <div class="accountbottom">
+                <div class="three">
+                    <div class="cardholdername">
+                        <div class="tt">
+                            Card Holder
+                        </div>
+                        <div class="bt">
+                            John Doe
+                        </div>
+                    </div>
+                    <div class="expiry">
+                        <div class="tt">
+                            Account Status
+                        </div>
+                        <div class="bt">Healthy</div>
+                    </div>
+                    <div class="expiry">
+                        <div class="tt">
+                          
+                        </div>
+                        <div class="bt"></div>
+                    </div>
+                    <div class="master">
+                        <img src="Group.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
             </div>
 
             <div class="cardsections">
                 <div class="transferblock">
-                    <div class="blockone">
+                    <div class="blockone" data-aos="fade-left">
                         <div class="balancecard">
-                            <div class="send">Send Money  <ion-icon name="send-outline"></ion-icon></div>
-                            <div class="recieve">recieve</div>
+                            <div class="send">Send Money  <span class="material-symbols-outlined">
+                                send_money
+                                </span></div>
+                            <div class="recieve">Beneficiary  <span class="material-symbols-outlined">
+                                diversity_1
+                                </span></div>
+                            <div class="recieve">Support  <span class="material-symbols-outlined">
+                                support_agent
+                                </span></div>
                                             </div>
                                             <br>
                         <div class="balancecard">
@@ -231,7 +291,7 @@
                         <div class="iconval">
                             <div class="icv yellow">
                                 <span class="material-symbols-outlined">
-                                    keyboard_return
+                                    autorenew
                                     </span>
 
                             </div>
@@ -287,6 +347,33 @@
     <section class="overlay"></section>
 
     <script>
+
+const toggleEye = document.querySelector('.toggle-eye');
+const content = document.querySelector('.content');
+
+toggleEye.addEventListener('click', function() {
+  if (content.textContent === 'XXX') {
+    const amount = '200,000' ;
+    if (amount) {
+      content.textContent = amount;
+      toggleEye.textContent = 'visibility_off';
+      content.classList.remove('hidden');
+      content.classList.add('fade-in');
+    }
+  } else {
+    content.textContent = 'XXX';
+    toggleEye.textContent = 'remove_red_eye';
+    content.classList.add('fade-out');
+    setTimeout(function() {
+      content.classList.add('hidden');
+      content.classList.remove('fade-out');
+    }, 500);
+  }
+});
+
+
+
+
         const navBar = document.querySelector("nav"),
             menuBtns = document.querySelectorAll(".menu-icon"),
             overlay = document.querySelector(".overlay");
@@ -301,7 +388,9 @@
             navBar.classList.remove("open");
         });
     </script>
-
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

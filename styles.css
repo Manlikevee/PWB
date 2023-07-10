@@ -145,7 +145,7 @@ margin: auto;
 
   .dashboarddata{
 
-  margin-top: 40px;
+  margin-top: 20px;
     width: 100%;
     padding: 10px;
   }
@@ -195,17 +195,23 @@ margin: auto;
 .topcard{
     display: flex;
     justify-content: space-between;
-
+align-items: center;
 }
 
 .bottomcard{
     font-size: 32px;
     font-style: normal;
+    display: flex;
+    gap: 4px;
     font-weight: 600;
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
+}
+
+.content{
+    font-family: INTER;
 }
 .usd{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1688141585058-50787735e064?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
@@ -247,9 +253,16 @@ margin: auto;
     display: flex;
     width: 100%;
     height: 100%;
-    
+    overflow: hidden;
 }
 
+.blockone {
+    overflow: hidden;
+}
+
+.maincontent{
+    overflow: hidden;
+}
 .transferblock{
     display: flex;
     gap: 20px;
@@ -262,6 +275,8 @@ margin: auto;
 .send{
     width: 100%;
     padding: 12px;
+  
+    color: rgb(21, 87, 36);
     display: flex;
     gap: 15px;
     align-items: center;
@@ -302,8 +317,10 @@ margin: auto;
 }
 .recieve{
     width: 100%;
+    
     padding: 12px;
     display: flex;
+    gap: 15px;
     align-items: center;
     justify-content: center;
     border-radius: 9px;
@@ -312,6 +329,11 @@ margin: auto;
     transition: 0.5s ease-in-out;
     box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
 
+}
+
+.recieve:hover{
+    cursor: pointer;
+    border: 1px solid #000;
 }
 .blocktwo{
     width: 60%;
@@ -412,7 +434,38 @@ margin: auto;
 .column{
     flex-direction: column;
     gap: 10px;
-    height: 100%;
+    height: fit-content;
+}
+
+.atmtop{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+.accountmiddle{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-block: 6px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.atmbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
 .name{
     color: #444;
@@ -422,6 +475,41 @@ margin: auto;
     letter-spacing: 0em;
     text-align: left;
     padding-block: 6px;
+}
+
+.tt{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-block: 2px;
+}
+
+.bt{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-block: 3px;
+}
+.master{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.master img{
+    width: 100%;
+}
+
+.three{
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+    justify-content: space-between;
 }
 .balancecard .name{
     width: 100%;
@@ -489,7 +577,7 @@ gap: 10px;
 }
 
 .yellow{
-    background-color: #fff2c6c0;
+    background-color: #2f39f1c0;
 }
 
   @media screen and (max-width:1280px) {
@@ -502,6 +590,21 @@ gap: 10px;
     .maincontent{
        width: 100%;
     }  
+
+    
+.atmbox{
+    background-color: purple;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1688494930420-694c13332f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 9px;
+}
+
+
     .cardblock {
         display: flex;
         width: 100%;
@@ -526,6 +629,10 @@ gap: 10px;
         }
         .dashboardcontent{
             padding: 0;
+        }
+        .iconval {
+            width: 18%;
+            padding: 7px;
         }
         .cardsections{
             padding: 4px;
