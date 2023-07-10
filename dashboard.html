@@ -382,24 +382,8 @@
 
 
     <section class="overlay"></section>
-     
-<script>
-    const url = 'https://api.stlouisfed.org/fred/series?search_text=banks&api_key=5949d3902cdba527126c5fbac32bef4b&file_type=json';
 
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    // Extract the bank names from the response
-    const bankNames = data.seriess.map(series => series.title);
-
-    // Log the bank names
-    console.log(bankNames);
-  })
-  .catch(error => {
-    console.log('Error:', error.message);
-  });
-
-</script>
+<script></script>
 
     <script>
         const input_currency = document.querySelector('#input_currency');

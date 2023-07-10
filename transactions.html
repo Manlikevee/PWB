@@ -99,6 +99,36 @@
     </div>
 </div>
 
+
+<br>
+<br>
+<div>
+    <label for="accountFilter">Account:</label>
+    <input type="text" id="accountFilter" />
+    <label for="amountFilter">Amount:</label>
+    <input type="number" id="amountFilter" />
+  </div>
+
+
+<div id="table">
+    <div class="row heading">
+      <div class="cell">Date</div>
+      <div class="cell">Account</div>
+      <div class="cell">Amount</div>
+      <div class="cell">Channel</div>
+      <div class="cell">Status</div>
+    </div>
+    <div class="row">
+      <div class="cell">2023-07-10</div>
+      <div class="cell">Account 1</div>
+      <div class="cell">100</div>
+      <div class="cell">Online</div>
+      <div class="cell">Approved</div>
+    </div>
+    <!-- Add more rows here -->
+  </div>
+ 
+  
             
         
            </div>
@@ -116,6 +146,113 @@
 
 <script>
     
+// Generate random data for the table
+function generateRandomData() {
+  const accounts = ['Account 1', 'Account 2', 'Account 3', 'Account 4', 'Account 5'];
+  const channels = ['Online', 'Mobile', 'Branch'];
+  const statuses = ['Approved', 'Pending', 'Rejected'];
+
+  const table = document.getElementById('table');
+
+  // Generate random data for 10 rows
+  for (let i = 0; i < 10; i++) {
+    const row = document.createElement('div');
+    row.classList.add('row');
+
+    const dateCell = document.createElement('div');
+    dateCell.classList.add('cell');
+    dateCell.textContent = getRandomDate();
+    row.appendChild(dateCell);
+
+    const accountCell = document.createElement('div');
+    accountCell.classList.add('cell');
+    accountCell.textContent = getRandomItem(accounts);
+    row.appendChild(accountCell);
+
+    const amountCell = document.createElement('div');
+    amountCell.classList.add('cell');
+    amountCell.textContent = getRandomAmount();
+    row.appendChild(amountCell);
+
+    const channelCell = document.createElement('div');
+    channelCell.classList.add('cell');
+    channelCell.textContent = getRandomItem(channels);
+    row.appendChild(channelCell);
+
+    const statusCell = document.createElement('div');
+    statusCell.classList.add('cell');
+    statusCell.textContent = getRandomItem(statuses);
+    row.appendChild(statusCell);
+
+    table.appendChild(row);
+  }
+}
+
+// Generate a random date (year between 2020 and 2023)
+function getRandomDate() {
+  const year = Math.floor(Math.random() * 4) + 2020;
+  const month = padZero(Math.floor(Math.random() * 12) + 1);
+  const day = padZero(Math.floor(Math.random() * 28) + 1);
+  return `${year}-${month}-${day}`;
+}
+
+// Generate a random amount (between 1 and 100)
+function getRandomAmount() {
+  return Math.floor(Math.random() * 100) + 1;
+}
+
+// Get a random item from an array
+function getRandomItem(array) {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+}
+
+// Add leading zero if number is less than 10
+function padZero(number) {
+  return number < 10 ? '0' + number : number;
+}
+
+// Generate random data for the table
+generateRandomData();
+
+
+// Retrieve filter inputs
+const accountFilterInput = document.getElementById('accountFilter');
+const amountFilterInput = document.getElementById('amountFilter');
+
+// Add event listeners to filter inputs
+accountFilterInput.addEventListener('input', filterTable);
+amountFilterInput.addEventListener('input', filterTable);
+
+// Function to filter the table based on user input
+function filterTable() {
+  const accountFilter = accountFilterInput.value.toLowerCase();
+  const amountFilter = amountFilterInput.value;
+
+  // Retrieve all table rows
+  const rows = document.getElementsByClassName('row');
+
+  // Loop through rows and hide/show based on filter criteria
+  Array.from(rows).forEach(row => {
+    const accountCell = row.querySelector('.cell:nth-child(2)');
+    const amountCell = row.querySelector('.cell:nth-child(3)');
+
+    // Hide the row if it doesn't match the filter criteria
+    if (
+      (accountFilter && !accountCell.textContent.toLowerCase().includes(accountFilter)) ||
+      (amountFilter && Number(amountCell.textContent) !== Number(amountFilter))
+    ) {
+      row.style.display = 'none';
+    } else {
+      row.style.display = 'flex';
+    }
+  });
+}
+
+
+
+
+
     function formatDate(date) {
         const monthNames = [
         'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',

@@ -683,3 +683,43 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         background: #0e161f;
         color: white !important;  
     }
+
+
+
+    #table {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+      
+      .row {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .heading {
+        font-weight: bold;
+        background-color: #f0f0f0;
+      }
+      
+      .cell {
+        flex: 1;
+        padding: 5px;
+      }
+      
+      input {
+        margin-bottom: 10px;
+      }
+      
+
+      @media screen and (max-width: 600px) {
+        .cell {
+          font-size: 12px; /* Decrease font size for smaller screens */
+          padding: 3px; /* Reduce padding for smaller cells */
+        }
+      
+        .heading .cell {
+          font-weight: normal; /* Remove bold font weight for heading cells on smaller screens */
+        }
+      }
