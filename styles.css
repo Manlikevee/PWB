@@ -164,6 +164,13 @@ margin: auto;
 
 }
 
+.downarrow span{
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  user-select: none;
+}
+
 .balancecard{
     display: flex;
     width: 100%;
@@ -606,6 +613,26 @@ gap: 10px;
 
   }
 
+  .tabletop{
+    display: flex;
+    justify-content: space-between;
+  }
+.tabletop div{
+  display: flex;
+  gap: 6px;
+}
+  .tabletop input {
+  font-family: inter;
+    padding: 0.52rem;
+    font-size: 14px;
+    border-radius: 0.2rem;
+    color: #222222;
+    width: 100%;
+    border: 1px solid rgba(114, 114, 114, 0.626);
+    transition: all .25s ease 0s;
+}
+
+
   .ppic {
     position: relative;
     width: 80px;
@@ -834,6 +861,7 @@ gap: 10px;
     border-radius: 7px;
     padding: 6px;
     border: none !important;
+    margin-bottom: 0;
   
   }
   
@@ -924,6 +952,22 @@ gap: 10px;
         .dashboardcontent{
             padding: 0;
         }
+
+        .profiletip {
+          margin-top: 3px;
+          width: 100%;
+          gap: 10px;
+          border-radius: 9px;
+          padding: 11px;
+      }
+
+      .profiletip {
+          margin-top: 3px;
+          width: 100%;
+          gap: 10px;
+          border-radius: 9px;
+          padding: 10px;
+      }
         .iconval {
             width: 18%;
             padding: 7px;
@@ -941,3 +985,16 @@ gap: 10px;
         
         
      }
+
+
+     @media screen and (max-width:1200px) {
+
+      .loginpage{
+          height: 100vh;
+      }
+      .profileheading, .inflow, .outflow, .timestamp
+      {
+        border-radius: 5px;
+        border: 1px solid rgb(232, 232, 232);
+      }
+  }

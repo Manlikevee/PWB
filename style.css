@@ -625,6 +625,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         height: 100vh;
     }
 }
+
+
     @media screen and (max-width:700px) {
         .section{
 
@@ -689,23 +691,67 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     #table {
         display: flex;
         flex-direction: column;
-        border: 1px solid #ccc;
+       background-color: white;
         margin-bottom: 10px;
+        border-radius: 9px;
       }
       
       .row {
         display: flex;
-        border-bottom: 1px solid #ccc;
+        padding: 16px;
+        
+        border-bottom: 1px solid rgb(232, 232, 232);
+        font-family: inter;
+        color: #444;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: 0.4s ease;
+cursor: pointer;
       }
-      
+
+      .row:hover{
+background-color: #f4f2f2;
+      }
+
+      .success{
+        color: #155724;
+        font-weight: 600;
+      }
+
+      .error{
+        color: crimson;
+      }
+      .tabledata{
+        display: flex;
+        flex-direction: column;
+       background-color: white;
+       padding: 20px;
+       border-radius: 8px;
+      }
       .heading {
+        font-family: inter;
+        color: #444;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
         font-weight: bold;
-        background-color: #f0f0f0;
+        
+        background-color: #f6f6f6;
+        border-radius: 4px;
       }
       
       .cell {
         flex: 1;
         padding: 5px;
+        display: flex;
+        gap: 3px;
+        justify-content: center;
+        align-items: center;
       }
       
       input {
@@ -718,6 +764,22 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
           font-size: 12px; /* Decrease font size for smaller screens */
           padding: 3px; /* Reduce padding for smaller cells */
         }
+        .tabledata {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 7px;
+            border-radius: 8px;
+        }
+        .tabletop{
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            padding: 10px;
+        }
+   
       
         .heading .cell {
           font-weight: normal; /* Remove bold font weight for heading cells on smaller screens */
