@@ -155,7 +155,7 @@ margin: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
 }
 .cardsections{
     padding: 20px;
@@ -338,7 +338,7 @@ align-items: center;
 }
 .blocktwo{
     width: 60%;
-    padding: 20px;
+    
     height: 100%;
    
 }
@@ -736,7 +736,149 @@ gap: 10px;
     padding-block: 3px;
     width: 100%;
 }
-
+.converter{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+  }
+  .currencyfield {
+    width: 100%;
+    display: flex;
+    background: #e6e6e6;
+    padding: 11px;
+    border-radius: 9px;
+}
+  #exchange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+  }
+  
+  #exchange span{
+    color: green;
+    cursor: pointer;
+    padding: 24px;
+    border-radius: 50%;
+    width: 50px;
+    background-color: #F5F2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    transition: 0.6s;
+    cursor: pointer;
+  
+  }
+  
+  #exchange span:hover{
+    background-color: #d6cfeb;
+  }
+  
+  #rate{
+    font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.003em;
+  text-align: left;
+  color: #9155A8;
+  margin-top: 10px;
+  margin-top: 10px;
+  }
+  .currencysubmit{
+    width: 100%;
+  }
+  
+  .currencysubmit button{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #0F0F11;
+    padding: 14px;
+    border-radius:5px;
+    color: white;
+    border: none;
+    transition: 0.6s;
+  cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  .currencysubmit button:hover{
+  background-color: 
+  #0958ab;
+  
+  
+   }
+  .currencyfield select{
+    background: #f5f5f5;
+    width: fit-content;
+    margin-left: auto;
+    font-family: poppins;
+    border-radius: 7px;
+    padding: 6px;
+    border: none;
+  
+  }
+  
+  .currencyfield input{
+    background: transparent;
+    width: 100%;
+    font-family: poppins;
+    margin-left: auto;
+    border-radius: 7px;
+    padding: 6px;
+    border: none !important;
+  
+  }
+  
+  .currencyfield input:focus{
+    background: transparent;
+    outline: transparent;
+    width: 100%;
+    margin-left: auto;
+    border-radius: 7px;
+    padding: 6px;
+    border: none !important;
+  
+  }
+  
+  .currencyfield select:focus{
+    outline: transparent;
+    background: #F2E3F7;
+    width: fit-content;
+    margin-left: auto;
+    border-radius: 7px;
+    padding: 6px;
+    border: none;
+  
+  }
+  
+  
+  ::-webkit-input-placeholder { color: 
+    #0F0F11;
+  } 
+  :-moz-placeholder { color:#0F0F11; }
+  ::-moz-placeholder { color: #0F0F11; }
+  :-ms-input-placeholder { color: #0F0F11; }
+  
+  
+  .recenttext{
+    width: 100%;
+    font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #0F0F11;
+  }
+  
 
   @media screen and (max-width:1000px) {
     .maincontent{

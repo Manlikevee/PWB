@@ -389,6 +389,8 @@ line-height: normal;
     background: #34495e;
     color: white;
 }
+
+
 .herosection{
     height: 100vh;
     /* background-image: url('images/bg_overlay.png');
@@ -674,4 +676,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         .topsection{
             margin-top: 10px;
         }
+    }
+
+
+    .alink{
+        background: #0e161f;
+        color: white !important;  
     }
