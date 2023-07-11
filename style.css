@@ -974,10 +974,10 @@ border-radius: 5px;
         .res{
             display: flex;
             color: #444;
-            font-size: 14px;
-            font-family: poppins;
+     
+          
             font-weight: 600;
-            line-height: 16px;
+      
             letter-spacing: 0em;
             text-align: left;
             padding-block: 0px;
