@@ -1149,6 +1149,7 @@ background-color: white;
 
      .abts{
         /* background-image: url('https://images.unsplash.com/photo-1689028293838-a6a66b0ae2c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80'); */
+        height: 100vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1164,3 +1165,9 @@ background-color: white;
      }
 
     
+     .about .getstarted {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
