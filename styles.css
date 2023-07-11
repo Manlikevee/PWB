@@ -372,7 +372,7 @@ align-items: center;
     border-radius: 7px;
     border-bottom: 1px solid rgb(214, 214, 214);
     padding: 10px;
-    transition: o.24 ease;
+    transition: o.24s ease;
 }
 
 
@@ -974,7 +974,34 @@ font-family: Inter;
         .dashboardcontent{
             padding: 0;
         }
+        .columnbody {
+          display: flex;
+          gap: 10px;
+          border-radius: 7px;
+          border-bottom: 1px solid rgb(214, 214, 214);
+          padding: 5px;
+          transition: o.24 ease;
+      }
 
+      .transtype {
+        width: 100%;
+        padding: 3px;
+    }
+
+      .iconval {
+        width: fit-content;
+        padding: 3px;
+
+      }
+
+      .transamount {
+        width: 30%;
+        padding: 3px;
+    }
+
+    .icv {
+      padding: 8px;
+    }
         .profiletip {
           margin-top: 3px;
           width: 100%;
