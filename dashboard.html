@@ -8,37 +8,52 @@
     <title>PWBFinance</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <meta name="description"
         content="Unlock your financial potential with our trusted finance company. We offer expert guidance and innovative solutions tailored to your unique needs. From investment strategies to wealth management and financial planning, our team of professionals is dedicated to helping you achieve your financial goals. Discover the power of financial success and secure your future with our reliable services. Contact us today and embark on a path to financial prosperity.">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
+    <div id="navlinkovalay"></div>
     <header id="navbar" data-aos="fade-up">
         <div class="container">
             <div class="logo"  onclick="window.location.href = 'index.html'">
                 <img src="Group (1).png" alt=""> PWB
             </div>
 
-            <div class="links">
-                <a href="dashboard.html" class="alink">Dashboard</a><a href="transactions.html">Transactions</a><a href="">Support</a>
+            <div class="links" id="middlelinks">
+                <a href="dashboard.html">Dashboard</a><a href="transactions.html" class="alink">Transactions</a><a href="">Support</a>
+           
+                <div class="hideme">
+                  <a href="dashboard.html" class="blackboton">Login</a>
+                   <!-- <a href=""><span class="material-symbols-outlined">
+                    logout
+                    </span></a> -->
+                </div>
+            
+              </div>
+
+            <div class="login getstarteds"onclick="window.location.href = 'dashboard.html'">
+                Login
             </div>
 
-            <div class="login"onclick="window.location.href = 'dashboard.html'">
-                K.Doe
-            </div>
+            <div class="navtoggle" onclick="navtoggler()">
+        
+              <span class="material-symbols-outlined">
+                menu
+                </span>
+          </div>
         </div>
        
     </header>
     <style>
-  
-    
-        #navbar{
+        #navbar {
             background-color: white;
         }
     </style>
@@ -112,272 +127,597 @@
             </div>
         </div>
     </nav>
-   
-    <div class="maincontent ">
-   
-        <div class="dashboarddata">
-           <div class="dashboardcontent">
-            <br>
-            <br>
-            <div class="topspot pad">
-                <div class="name">HELLO VICTOR</div>
-              
-            </div>
 
-            <div class="cardblock">
-                <div class="cardsections">
-                    <div class="balancecard">
-                        <div class="usd" data-aos="fade-up">
-                            <div class="topcard">
-                                <div class="flag">
-                                    <div>
-                                        <img src="images/united-states-flag-icon.png" alt="">
-                                    </div><div class="flagname">USD Wallet Balance</div>
-                                </div>
-                                <div class="downarrow ">
-                                  
+    <div class="maincontent ">
+
+        <div class="dashboarddata">
+            <div class="dashboardcontent">
+                <br>
+                <br>
+                <div class="topspot pad">
+                    <div class="name">HELLO VICTOR</div>
+
+                </div>
+
+                <div class="cardblock">
+                    <div class="cardsections">
+                        <div class="balancecard">
+                            <div class="usd" data-aos="fade-up">
+                                <div class="topcard">
+                                    <div class="flag">
+                                        <div>
+                                            <img src="images/united-states-flag-icon.png" alt="">
+                                        </div>
+                                        <div class="flagname">USD Wallet Balance</div>
+                                    </div>
+                                    <div class="downarrow ">
+
                                         <span class="material-symbols-outlined toggle-eye">
                                             visibility_off
-                                            </span>
-                                </div>
-                            </div>
-
-                            <div class="bottomcard">
-                                $ <div class="content">XXX</div> 
-                            </div>
-                        </div>
-                        <div class="crypto" data-aos="fade-left">
-                            <div class="topcard">
-                                <div class="flag">
-                                    <div>
-                                        <img src="images/bitcoin-icon.png" alt="">
-                                    </div><div class="flagname">CRYPTO Wallet Balance</div>
-                                </div>
-                                <div class="downarrow">
-                                    
-                                    <span class="material-symbols-outlined toggle-eye">
-                                        visibility_off
                                         </span>
+                                    </div>
+                                </div>
+
+                                <div class="bottomcard">
+                                    $ <div class="content">XXX</div>
+                                </div>
+                            </div>
+                            <div class="crypto" data-aos="fade-left">
+                                <div class="topcard">
+                                    <div class="flag">
+                                        <div>
+                                            <img src="images/bitcoin-icon.png" alt="">
+                                        </div>
+                                        <div class="flagname">CRYPTO Wallet Balance</div>
+                                    </div>
+                                    <div class="downarrow">
+
+                                        <span class="material-symbols-outlined toggle-eye">
+                                            visibility_off
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="bottomcard">
+                                    $32,000.22
                                 </div>
                             </div>
 
-                            <div class="bottomcard">
-                                $32,000.22
-                            </div>
                         </div>
-                 
+                        <div class="quicklink">
+                            QUICK ACTION
+                        </div>
+
                     </div>
-                    <div class="quicklink">
-                        QUICK ACTION
-                    </div>
-            
-                </div>
-    <div class="atmcard" data-aos="fade-down">
-        <div class="atmbox">
-            <div class="atmtop">
-                <div class="accounttype">
-                    Savings Account
-                </div>
-                <div class="signal">
-                    <span class="material-symbols-outlined">
-                    nest_remote_comfort_sensor
-                    </span>
-                </div>
-            </div>
-
-            <div class="accountmiddle">
-                1234  4444  2222  1111
-            </div>
-
-            <div class="accountbottom">
-                <div class="three">
-                    <div class="cardholdername">
-                        <div class="tt">
-                            Account Name
-                        </div>
-                        <div class="bt">
-                            John Doe
-                        </div>
-                    </div>
-                    <div class="expiry">
-                        <div class="tt">
-                            Account Status
-                        </div>
-                        <div class="bt">Healthy</div>
-                    </div>
-                    <div class="expiry">
-                        <div class="tt">
-                          
-                        </div>
-                        <div class="bt"></div>
-                    </div>
-                    <div class="master">
-                        <img src="Group (1).png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-            </div>
-
-            <div class="cardsections">
-                <div class="transferblock">
-                    <div class="blockone" data-aos="fade-left">
-                        <div class="balancecard">
-                            <div class="send">Send Money  <span class="material-symbols-outlined">
-                                send_money
-                                </span></div>
-                            <div class="recieve">Beneficiary  <span class="material-symbols-outlined">
-                                diversity_1
-                                </span></div>
-                            <div class="recieve">Support  <span class="material-symbols-outlined">
-                                support_agent
-                                </span></div>
-                                            </div>
-                                            <br>
-                        <div class="balancecard">
-                          <p class="name">
-                              Recent Transactions
-                          </p>
-  
-                          <p class="names">
-                            View-All
-                          </p>
-                        </div>
-  
-                        <div class="column">
-                       <div class="columnbody">
-                          <div class="iconval">
-                              <div class="icv">
-                                  <span class="material-symbols-outlined">
-                                      keyboard_return
-                                      </span>
-  
-                              </div>
-                          </div>
-  
-                          <div class="transtype">
-                              <div class="transname name">Sent To Victor</div>
-                              <div class="transdate nms">2:34 am june 2023</div>
-                          </div>
-  
-                          <div class="transamount">
-                              <div class="transamount">$129,000,000</div>
-                              <div class="transstatus">Successful</div>
-                              
-                          </div>
-                       </div>
-                
-                       <div class="columnbody">
-                        <div class="iconval">
-                            <div class="icv green">
-                                <span class="material-symbols-outlined">
-                                    forward
-                                    </span> 
-
-                            </div>
-                        </div>
-
-                        <div class="transtype">
-                            <div class="transname name">Sent To Victor</div>
-                            <div class="transdate nms">2:34 am june 2023</div>
-                        </div>
-
-                        <div class="transamount">
-                            <div class="transamount">$129,000,000</div>
-                            <div class="transstatus">Successful</div>
-                            
-                        </div>
-                     </div>
-
-
-                     <div class="columnbody">
-                        <div class="iconval">
-                            <div class="icv yellow">
-                                <span class="material-symbols-outlined">
-                                    autorenew
+                    <div class="atmcard" data-aos="fade-down">
+                        <div class="atmbox">
+                            <div class="atmtop">
+                                <div class="accounttype">
+                                    Savings Account
+                                </div>
+                                <div class="signal">
+                                    <span class="material-symbols-outlined">
+                                        nest_remote_comfort_sensor
                                     </span>
+                                </div>
+                            </div>
 
+                            <div class="accountmiddle">
+                                1234 4444 2222 1111
+                            </div>
+
+                            <div class="accountbottom">
+                                <div class="three">
+                                    <div class="cardholdername">
+                                        <div class="tt">
+                                            Account Name
+                                        </div>
+                                        <div class="bt">
+                                            John Doe
+                                        </div>
+                                    </div>
+                                    <div class="expiry">
+                                        <div class="tt">
+                                            Account Status
+                                        </div>
+                                        <div class="bt">Healthy</div>
+                                    </div>
+                                    <div class="expiry">
+                                        <div class="tt">
+
+                                        </div>
+                                        <div class="bt"></div>
+                                    </div>
+                                    <div class="master">
+                                        <img src="Group (1).png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="transtype">
-                            <div class="transname name">Sent To Victor</div>
-                            <div class="transdate nms">2:34 am june 2023</div>
-                        </div>
-
-                        <div class="transamount">
-                            <div class="transamount">$129,000,000</div>
-                            <div class="transstatus">Successful</div>
-                            
-                        </div>
-                     </div>
-                        </div>
-  
-                         
-                      </div>
-
-                    <div class="blocktwo">
-
-
-
-<P class="name" data-aos="zoom-in">
-    Convert Fundss
-</P>
-<br>
-                        <div class="balancecard">
-                            <!-- <div class="send">Send Money  </div> -->
-                            
-                            <div class="converter" data-aos="fade-up">
-                             
-                                <div class="currencyconvert names">
-                                  Users are able to convert from one currency to another
-                                </div>
-                            <br>
-                            
-                                <div class="currencyfield">
-                                  <input type="number" placeholder="0.00" id="input_amount" value="1"> <select name="" id="input_currency"> 
-                                    <option value="NGN" selected="">NGN</option>
-                                  <option value="AED">AED</option><option value="AFN">AFN</option><option value="ALL">ALL</option><option value="AMD">AMD</option><option value="ANG">ANG</option><option value="AOA">AOA</option><option value="ARS">ARS</option><option value="AUD">AUD</option><option value="AWG">AWG</option><option value="AZN">AZN</option><option value="BAM">BAM</option><option value="BBD">BBD</option><option value="BDT">BDT</option><option value="BGN">BGN</option><option value="BHD">BHD</option><option value="BIF">BIF</option><option value="BMD">BMD</option><option value="BND">BND</option><option value="BOB">BOB</option><option value="BRL">BRL</option><option value="BSD">BSD</option><option value="BTN">BTN</option><option value="BWP">BWP</option><option value="BYN">BYN</option><option value="BZD">BZD</option><option value="CAD">CAD</option><option value="CDF">CDF</option><option value="CHF">CHF</option><option value="CLP">CLP</option><option value="CNY">CNY</option><option value="COP">COP</option><option value="CRC">CRC</option><option value="CUP">CUP</option><option value="CVE">CVE</option><option value="CZK">CZK</option><option value="DJF">DJF</option><option value="DKK">DKK</option><option value="DOP">DOP</option><option value="DZD">DZD</option><option value="EGP">EGP</option><option value="ERN">ERN</option><option value="ETB">ETB</option><option value="EUR">EUR</option><option value="FJD">FJD</option><option value="FKP">FKP</option><option value="FOK">FOK</option><option value="GBP">GBP</option><option value="GEL">GEL</option><option value="GGP">GGP</option><option value="GHS">GHS</option><option value="GIP">GIP</option><option value="GMD">GMD</option><option value="GNF">GNF</option><option value="GTQ">GTQ</option><option value="GYD">GYD</option><option value="HKD">HKD</option><option value="HNL">HNL</option><option value="HRK">HRK</option><option value="HTG">HTG</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option><option value="IMP">IMP</option><option value="INR">INR</option><option value="IQD">IQD</option><option value="IRR">IRR</option><option value="ISK">ISK</option><option value="JEP">JEP</option><option value="JMD">JMD</option><option value="JOD">JOD</option><option value="JPY">JPY</option><option value="KES">KES</option><option value="KGS">KGS</option><option value="KHR">KHR</option><option value="KID">KID</option><option value="KMF">KMF</option><option value="KRW">KRW</option><option value="KWD">KWD</option><option value="KYD">KYD</option><option value="KZT">KZT</option><option value="LAK">LAK</option><option value="LBP">LBP</option><option value="LKR">LKR</option><option value="LRD">LRD</option><option value="LSL">LSL</option><option value="LYD">LYD</option><option value="MAD">MAD</option><option value="MDL">MDL</option><option value="MGA">MGA</option><option value="MKD">MKD</option><option value="MMK">MMK</option><option value="MNT">MNT</option><option value="MOP">MOP</option><option value="MRU">MRU</option><option value="MUR">MUR</option><option value="MVR">MVR</option><option value="MWK">MWK</option><option value="MXN">MXN</option><option value="MYR">MYR</option><option value="MZN">MZN</option><option value="NAD">NAD</option><option value="NGN">NGN</option><option value="NIO">NIO</option><option value="NOK">NOK</option><option value="NPR">NPR</option><option value="NZD">NZD</option><option value="OMR">OMR</option><option value="PAB">PAB</option><option value="PEN">PEN</option><option value="PGK">PGK</option><option value="PHP">PHP</option><option value="PKR">PKR</option><option value="PLN">PLN</option><option value="PYG">PYG</option><option value="QAR">QAR</option><option value="RON">RON</option><option value="RSD">RSD</option><option value="RUB">RUB</option><option value="RWF">RWF</option><option value="SAR">SAR</option><option value="SBD">SBD</option><option value="SCR">SCR</option><option value="SDG">SDG</option><option value="SEK">SEK</option><option value="SGD">SGD</option><option value="SHP">SHP</option><option value="SLE">SLE</option><option value="SOS">SOS</option><option value="SRD">SRD</option><option value="SSP">SSP</option><option value="STN">STN</option><option value="SYP">SYP</option><option value="SZL">SZL</option><option value="THB">THB</option><option value="TJS">TJS</option><option value="TMT">TMT</option><option value="TND">TND</option><option value="TOP">TOP</option><option value="TRY">TRY</option><option value="TTD">TTD</option><option value="TVD">TVD</option><option value="TWD">TWD</option><option value="TZS">TZS</option><option value="UAH">UAH</option><option value="UGX">UGX</option><option value="USD">USD</option><option value="UYU">UYU</option><option value="UZS">UZS</option><option value="VES">VES</option><option value="VND">VND</option><option value="VUV">VUV</option><option value="WST">WST</option><option value="XAF">XAF</option><option value="XCD">XCD</option><option value="XDR">XDR</option><option value="XOF">XOF</option><option value="XPF">XPF</option><option value="YER">YER</option><option value="ZAR">ZAR</option><option value="ZMW">ZMW</option><option value="ZWL">ZWL</option></select>
-                                </div>
-                            
-                                <div id="exchange">
-                               <span id="exc">
-                                ↕   
-                               </span>   
-                                </div>
-                            
-                                <div class="currencyfield">
-                                  <input type="number" placeholder="0.00" id="output_amount"> 
-                                  <select name="" id="output_currency"> 
-                                    <option value="USD" selected="">USD</option>
-                                    <option value="GHC">GHC</option>
-                                  <option value="AED">AED</option><option value="AFN">AFN</option><option value="ALL">ALL</option><option value="AMD">AMD</option><option value="ANG">ANG</option><option value="AOA">AOA</option><option value="ARS">ARS</option><option value="AUD">AUD</option><option value="AWG">AWG</option><option value="AZN">AZN</option><option value="BAM">BAM</option><option value="BBD">BBD</option><option value="BDT">BDT</option><option value="BGN">BGN</option><option value="BHD">BHD</option><option value="BIF">BIF</option><option value="BMD">BMD</option><option value="BND">BND</option><option value="BOB">BOB</option><option value="BRL">BRL</option><option value="BSD">BSD</option><option value="BTN">BTN</option><option value="BWP">BWP</option><option value="BYN">BYN</option><option value="BZD">BZD</option><option value="CAD">CAD</option><option value="CDF">CDF</option><option value="CHF">CHF</option><option value="CLP">CLP</option><option value="CNY">CNY</option><option value="COP">COP</option><option value="CRC">CRC</option><option value="CUP">CUP</option><option value="CVE">CVE</option><option value="CZK">CZK</option><option value="DJF">DJF</option><option value="DKK">DKK</option><option value="DOP">DOP</option><option value="DZD">DZD</option><option value="EGP">EGP</option><option value="ERN">ERN</option><option value="ETB">ETB</option><option value="EUR">EUR</option><option value="FJD">FJD</option><option value="FKP">FKP</option><option value="FOK">FOK</option><option value="GBP">GBP</option><option value="GEL">GEL</option><option value="GGP">GGP</option><option value="GHS">GHS</option><option value="GIP">GIP</option><option value="GMD">GMD</option><option value="GNF">GNF</option><option value="GTQ">GTQ</option><option value="GYD">GYD</option><option value="HKD">HKD</option><option value="HNL">HNL</option><option value="HRK">HRK</option><option value="HTG">HTG</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option><option value="IMP">IMP</option><option value="INR">INR</option><option value="IQD">IQD</option><option value="IRR">IRR</option><option value="ISK">ISK</option><option value="JEP">JEP</option><option value="JMD">JMD</option><option value="JOD">JOD</option><option value="JPY">JPY</option><option value="KES">KES</option><option value="KGS">KGS</option><option value="KHR">KHR</option><option value="KID">KID</option><option value="KMF">KMF</option><option value="KRW">KRW</option><option value="KWD">KWD</option><option value="KYD">KYD</option><option value="KZT">KZT</option><option value="LAK">LAK</option><option value="LBP">LBP</option><option value="LKR">LKR</option><option value="LRD">LRD</option><option value="LSL">LSL</option><option value="LYD">LYD</option><option value="MAD">MAD</option><option value="MDL">MDL</option><option value="MGA">MGA</option><option value="MKD">MKD</option><option value="MMK">MMK</option><option value="MNT">MNT</option><option value="MOP">MOP</option><option value="MRU">MRU</option><option value="MUR">MUR</option><option value="MVR">MVR</option><option value="MWK">MWK</option><option value="MXN">MXN</option><option value="MYR">MYR</option><option value="MZN">MZN</option><option value="NAD">NAD</option><option value="NGN">NGN</option><option value="NIO">NIO</option><option value="NOK">NOK</option><option value="NPR">NPR</option><option value="NZD">NZD</option><option value="OMR">OMR</option><option value="PAB">PAB</option><option value="PEN">PEN</option><option value="PGK">PGK</option><option value="PHP">PHP</option><option value="PKR">PKR</option><option value="PLN">PLN</option><option value="PYG">PYG</option><option value="QAR">QAR</option><option value="RON">RON</option><option value="RSD">RSD</option><option value="RUB">RUB</option><option value="RWF">RWF</option><option value="SAR">SAR</option><option value="SBD">SBD</option><option value="SCR">SCR</option><option value="SDG">SDG</option><option value="SEK">SEK</option><option value="SGD">SGD</option><option value="SHP">SHP</option><option value="SLE">SLE</option><option value="SOS">SOS</option><option value="SRD">SRD</option><option value="SSP">SSP</option><option value="STN">STN</option><option value="SYP">SYP</option><option value="SZL">SZL</option><option value="THB">THB</option><option value="TJS">TJS</option><option value="TMT">TMT</option><option value="TND">TND</option><option value="TOP">TOP</option><option value="TRY">TRY</option><option value="TTD">TTD</option><option value="TVD">TVD</option><option value="TWD">TWD</option><option value="TZS">TZS</option><option value="UAH">UAH</option><option value="UGX">UGX</option><option value="USD">USD</option><option value="UYU">UYU</option><option value="UZS">UZS</option><option value="VES">VES</option><option value="VND">VND</option><option value="VUV">VUV</option><option value="WST">WST</option><option value="XAF">XAF</option><option value="XCD">XCD</option><option value="XDR">XDR</option><option value="XOF">XOF</option><option value="XPF">XPF</option><option value="YER">YER</option><option value="ZAR">ZAR</option><option value="ZMW">ZMW</option><option value="ZWL">ZWL</option></select>
-                                </div>
-                                <div class="result">
-                                  <div class="rate" id="rate">1 NGN = 0.00131 USD</div>
-                            
-                            </div>
-                            
-                                <div class="currencysubmit">
-                            <button type="submit" id="">Fund Amount</button>
-                                </div>
-                              </div>
-                            
-
-                                            </div>
                     </div>
-                  
                 </div>
+
+                <div class="cardsections">
+                    <div class="transferblock">
+                        <div class="blockone" data-aos="fade-left">
+                            <div class="balancecard">
+                                <div class="send">Send Money <span class="material-symbols-outlined">
+                                        send_money
+                                    </span></div>
+                                <div class="recieve">Beneficiary <span class="material-symbols-outlined">
+                                        diversity_1
+                                    </span></div>
+                                <div class="recieve">Support <span class="material-symbols-outlined">
+                                        support_agent
+                                    </span></div>
+                            </div>
+                            <br>
+                            <div class="balancecard">
+                                <p class="name">
+                                    Recent Transactions
+                                </p>
+
+                                <p class="names">
+                                    View-All
+                                </p>
+                            </div>
+
+                            <div class="column">
+                                <div class="columnbody">
+                                    <div class="iconval">
+                                        <div class="icv">
+                                            <span class="material-symbols-outlined">
+                                                keyboard_return
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="transtype">
+                                        <div class="transname name">Sent To Victor</div>
+                                        <div class="transdate nms">2:34 am june 2023</div>
+                                    </div>
+
+                                    <div class="transamount">
+                                        <div class="transamount">$129,000,000</div>
+                                        <div class="transstatus">Successful</div>
+
+                                    </div>
+                                </div>
+
+                                <div class="columnbody">
+                                    <div class="iconval">
+                                        <div class="icv green">
+                                            <span class="material-symbols-outlined">
+                                                forward
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="transtype">
+                                        <div class="transname name">Sent To Victor</div>
+                                        <div class="transdate nms">2:34 am june 2023</div>
+                                    </div>
+
+                                    <div class="transamount">
+                                        <div class="transamount">$129,000,000</div>
+                                        <div class="transstatus">Successful</div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="columnbody">
+                                    <div class="iconval">
+                                        <div class="icv yellow">
+                                            <span class="material-symbols-outlined">
+                                                autorenew
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="transtype">
+                                        <div class="transname name">Sent To Victor</div>
+                                        <div class="transdate nms">2:34 am june 2023</div>
+                                    </div>
+
+                                    <div class="transamount">
+                                        <div class="transamount">$129,000,000</div>
+                                        <div class="transstatus">Successful</div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="blocktwo">
+
+
+
+                            <P class="name" data-aos="zoom-in">
+                                Convert Fundss
+                            </P>
+                            <br>
+                            <div class="balancecard">
+                                <!-- <div class="send">Send Money  </div> -->
+
+                                <div class="converter" data-aos="fade-up">
+
+                                    <div class="currencyconvert names">
+                                        Users are able to convert from one currency to another
+                                    </div>
+                                    <br>
+
+                                    <div class="currencyfield">
+                                        <input type="number" placeholder="0.00" id="input_amount" value="1"> <select
+                                            name="" id="input_currency">
+                                            <option value="NGN" selected="">NGN</option>
+                                            <option value="AED">AED</option>
+                                            <option value="AFN">AFN</option>
+                                            <option value="ALL">ALL</option>
+                                            <option value="AMD">AMD</option>
+                                            <option value="ANG">ANG</option>
+                                            <option value="AOA">AOA</option>
+                                            <option value="ARS">ARS</option>
+                                            <option value="AUD">AUD</option>
+                                            <option value="AWG">AWG</option>
+                                            <option value="AZN">AZN</option>
+                                            <option value="BAM">BAM</option>
+                                            <option value="BBD">BBD</option>
+                                            <option value="BDT">BDT</option>
+                                            <option value="BGN">BGN</option>
+                                            <option value="BHD">BHD</option>
+                                            <option value="BIF">BIF</option>
+                                            <option value="BMD">BMD</option>
+                                            <option value="BND">BND</option>
+                                            <option value="BOB">BOB</option>
+                                            <option value="BRL">BRL</option>
+                                            <option value="BSD">BSD</option>
+                                            <option value="BTN">BTN</option>
+                                            <option value="BWP">BWP</option>
+                                            <option value="BYN">BYN</option>
+                                            <option value="BZD">BZD</option>
+                                            <option value="CAD">CAD</option>
+                                            <option value="CDF">CDF</option>
+                                            <option value="CHF">CHF</option>
+                                            <option value="CLP">CLP</option>
+                                            <option value="CNY">CNY</option>
+                                            <option value="COP">COP</option>
+                                            <option value="CRC">CRC</option>
+                                            <option value="CUP">CUP</option>
+                                            <option value="CVE">CVE</option>
+                                            <option value="CZK">CZK</option>
+                                            <option value="DJF">DJF</option>
+                                            <option value="DKK">DKK</option>
+                                            <option value="DOP">DOP</option>
+                                            <option value="DZD">DZD</option>
+                                            <option value="EGP">EGP</option>
+                                            <option value="ERN">ERN</option>
+                                            <option value="ETB">ETB</option>
+                                            <option value="EUR">EUR</option>
+                                            <option value="FJD">FJD</option>
+                                            <option value="FKP">FKP</option>
+                                            <option value="FOK">FOK</option>
+                                            <option value="GBP">GBP</option>
+                                            <option value="GEL">GEL</option>
+                                            <option value="GGP">GGP</option>
+                                            <option value="GHS">GHS</option>
+                                            <option value="GIP">GIP</option>
+                                            <option value="GMD">GMD</option>
+                                            <option value="GNF">GNF</option>
+                                            <option value="GTQ">GTQ</option>
+                                            <option value="GYD">GYD</option>
+                                            <option value="HKD">HKD</option>
+                                            <option value="HNL">HNL</option>
+                                            <option value="HRK">HRK</option>
+                                            <option value="HTG">HTG</option>
+                                            <option value="HUF">HUF</option>
+                                            <option value="IDR">IDR</option>
+                                            <option value="ILS">ILS</option>
+                                            <option value="IMP">IMP</option>
+                                            <option value="INR">INR</option>
+                                            <option value="IQD">IQD</option>
+                                            <option value="IRR">IRR</option>
+                                            <option value="ISK">ISK</option>
+                                            <option value="JEP">JEP</option>
+                                            <option value="JMD">JMD</option>
+                                            <option value="JOD">JOD</option>
+                                            <option value="JPY">JPY</option>
+                                            <option value="KES">KES</option>
+                                            <option value="KGS">KGS</option>
+                                            <option value="KHR">KHR</option>
+                                            <option value="KID">KID</option>
+                                            <option value="KMF">KMF</option>
+                                            <option value="KRW">KRW</option>
+                                            <option value="KWD">KWD</option>
+                                            <option value="KYD">KYD</option>
+                                            <option value="KZT">KZT</option>
+                                            <option value="LAK">LAK</option>
+                                            <option value="LBP">LBP</option>
+                                            <option value="LKR">LKR</option>
+                                            <option value="LRD">LRD</option>
+                                            <option value="LSL">LSL</option>
+                                            <option value="LYD">LYD</option>
+                                            <option value="MAD">MAD</option>
+                                            <option value="MDL">MDL</option>
+                                            <option value="MGA">MGA</option>
+                                            <option value="MKD">MKD</option>
+                                            <option value="MMK">MMK</option>
+                                            <option value="MNT">MNT</option>
+                                            <option value="MOP">MOP</option>
+                                            <option value="MRU">MRU</option>
+                                            <option value="MUR">MUR</option>
+                                            <option value="MVR">MVR</option>
+                                            <option value="MWK">MWK</option>
+                                            <option value="MXN">MXN</option>
+                                            <option value="MYR">MYR</option>
+                                            <option value="MZN">MZN</option>
+                                            <option value="NAD">NAD</option>
+                                            <option value="NGN">NGN</option>
+                                            <option value="NIO">NIO</option>
+                                            <option value="NOK">NOK</option>
+                                            <option value="NPR">NPR</option>
+                                            <option value="NZD">NZD</option>
+                                            <option value="OMR">OMR</option>
+                                            <option value="PAB">PAB</option>
+                                            <option value="PEN">PEN</option>
+                                            <option value="PGK">PGK</option>
+                                            <option value="PHP">PHP</option>
+                                            <option value="PKR">PKR</option>
+                                            <option value="PLN">PLN</option>
+                                            <option value="PYG">PYG</option>
+                                            <option value="QAR">QAR</option>
+                                            <option value="RON">RON</option>
+                                            <option value="RSD">RSD</option>
+                                            <option value="RUB">RUB</option>
+                                            <option value="RWF">RWF</option>
+                                            <option value="SAR">SAR</option>
+                                            <option value="SBD">SBD</option>
+                                            <option value="SCR">SCR</option>
+                                            <option value="SDG">SDG</option>
+                                            <option value="SEK">SEK</option>
+                                            <option value="SGD">SGD</option>
+                                            <option value="SHP">SHP</option>
+                                            <option value="SLE">SLE</option>
+                                            <option value="SOS">SOS</option>
+                                            <option value="SRD">SRD</option>
+                                            <option value="SSP">SSP</option>
+                                            <option value="STN">STN</option>
+                                            <option value="SYP">SYP</option>
+                                            <option value="SZL">SZL</option>
+                                            <option value="THB">THB</option>
+                                            <option value="TJS">TJS</option>
+                                            <option value="TMT">TMT</option>
+                                            <option value="TND">TND</option>
+                                            <option value="TOP">TOP</option>
+                                            <option value="TRY">TRY</option>
+                                            <option value="TTD">TTD</option>
+                                            <option value="TVD">TVD</option>
+                                            <option value="TWD">TWD</option>
+                                            <option value="TZS">TZS</option>
+                                            <option value="UAH">UAH</option>
+                                            <option value="UGX">UGX</option>
+                                            <option value="USD">USD</option>
+                                            <option value="UYU">UYU</option>
+                                            <option value="UZS">UZS</option>
+                                            <option value="VES">VES</option>
+                                            <option value="VND">VND</option>
+                                            <option value="VUV">VUV</option>
+                                            <option value="WST">WST</option>
+                                            <option value="XAF">XAF</option>
+                                            <option value="XCD">XCD</option>
+                                            <option value="XDR">XDR</option>
+                                            <option value="XOF">XOF</option>
+                                            <option value="XPF">XPF</option>
+                                            <option value="YER">YER</option>
+                                            <option value="ZAR">ZAR</option>
+                                            <option value="ZMW">ZMW</option>
+                                            <option value="ZWL">ZWL</option>
+                                        </select>
+                                    </div>
+
+                                    <div id="exchange">
+                                        <span id="exc">
+                                            ↕
+                                        </span>
+                                    </div>
+
+                                    <div class="currencyfield">
+                                        <input type="number" placeholder="0.00" id="output_amount">
+                                        <select name="" id="output_currency">
+                                            <option value="USD" selected="">USD</option>
+                                            <option value="GHC">GHC</option>
+                                            <option value="AED">AED</option>
+                                            <option value="AFN">AFN</option>
+                                            <option value="ALL">ALL</option>
+                                            <option value="AMD">AMD</option>
+                                            <option value="ANG">ANG</option>
+                                            <option value="AOA">AOA</option>
+                                            <option value="ARS">ARS</option>
+                                            <option value="AUD">AUD</option>
+                                            <option value="AWG">AWG</option>
+                                            <option value="AZN">AZN</option>
+                                            <option value="BAM">BAM</option>
+                                            <option value="BBD">BBD</option>
+                                            <option value="BDT">BDT</option>
+                                            <option value="BGN">BGN</option>
+                                            <option value="BHD">BHD</option>
+                                            <option value="BIF">BIF</option>
+                                            <option value="BMD">BMD</option>
+                                            <option value="BND">BND</option>
+                                            <option value="BOB">BOB</option>
+                                            <option value="BRL">BRL</option>
+                                            <option value="BSD">BSD</option>
+                                            <option value="BTN">BTN</option>
+                                            <option value="BWP">BWP</option>
+                                            <option value="BYN">BYN</option>
+                                            <option value="BZD">BZD</option>
+                                            <option value="CAD">CAD</option>
+                                            <option value="CDF">CDF</option>
+                                            <option value="CHF">CHF</option>
+                                            <option value="CLP">CLP</option>
+                                            <option value="CNY">CNY</option>
+                                            <option value="COP">COP</option>
+                                            <option value="CRC">CRC</option>
+                                            <option value="CUP">CUP</option>
+                                            <option value="CVE">CVE</option>
+                                            <option value="CZK">CZK</option>
+                                            <option value="DJF">DJF</option>
+                                            <option value="DKK">DKK</option>
+                                            <option value="DOP">DOP</option>
+                                            <option value="DZD">DZD</option>
+                                            <option value="EGP">EGP</option>
+                                            <option value="ERN">ERN</option>
+                                            <option value="ETB">ETB</option>
+                                            <option value="EUR">EUR</option>
+                                            <option value="FJD">FJD</option>
+                                            <option value="FKP">FKP</option>
+                                            <option value="FOK">FOK</option>
+                                            <option value="GBP">GBP</option>
+                                            <option value="GEL">GEL</option>
+                                            <option value="GGP">GGP</option>
+                                            <option value="GHS">GHS</option>
+                                            <option value="GIP">GIP</option>
+                                            <option value="GMD">GMD</option>
+                                            <option value="GNF">GNF</option>
+                                            <option value="GTQ">GTQ</option>
+                                            <option value="GYD">GYD</option>
+                                            <option value="HKD">HKD</option>
+                                            <option value="HNL">HNL</option>
+                                            <option value="HRK">HRK</option>
+                                            <option value="HTG">HTG</option>
+                                            <option value="HUF">HUF</option>
+                                            <option value="IDR">IDR</option>
+                                            <option value="ILS">ILS</option>
+                                            <option value="IMP">IMP</option>
+                                            <option value="INR">INR</option>
+                                            <option value="IQD">IQD</option>
+                                            <option value="IRR">IRR</option>
+                                            <option value="ISK">ISK</option>
+                                            <option value="JEP">JEP</option>
+                                            <option value="JMD">JMD</option>
+                                            <option value="JOD">JOD</option>
+                                            <option value="JPY">JPY</option>
+                                            <option value="KES">KES</option>
+                                            <option value="KGS">KGS</option>
+                                            <option value="KHR">KHR</option>
+                                            <option value="KID">KID</option>
+                                            <option value="KMF">KMF</option>
+                                            <option value="KRW">KRW</option>
+                                            <option value="KWD">KWD</option>
+                                            <option value="KYD">KYD</option>
+                                            <option value="KZT">KZT</option>
+                                            <option value="LAK">LAK</option>
+                                            <option value="LBP">LBP</option>
+                                            <option value="LKR">LKR</option>
+                                            <option value="LRD">LRD</option>
+                                            <option value="LSL">LSL</option>
+                                            <option value="LYD">LYD</option>
+                                            <option value="MAD">MAD</option>
+                                            <option value="MDL">MDL</option>
+                                            <option value="MGA">MGA</option>
+                                            <option value="MKD">MKD</option>
+                                            <option value="MMK">MMK</option>
+                                            <option value="MNT">MNT</option>
+                                            <option value="MOP">MOP</option>
+                                            <option value="MRU">MRU</option>
+                                            <option value="MUR">MUR</option>
+                                            <option value="MVR">MVR</option>
+                                            <option value="MWK">MWK</option>
+                                            <option value="MXN">MXN</option>
+                                            <option value="MYR">MYR</option>
+                                            <option value="MZN">MZN</option>
+                                            <option value="NAD">NAD</option>
+                                            <option value="NGN">NGN</option>
+                                            <option value="NIO">NIO</option>
+                                            <option value="NOK">NOK</option>
+                                            <option value="NPR">NPR</option>
+                                            <option value="NZD">NZD</option>
+                                            <option value="OMR">OMR</option>
+                                            <option value="PAB">PAB</option>
+                                            <option value="PEN">PEN</option>
+                                            <option value="PGK">PGK</option>
+                                            <option value="PHP">PHP</option>
+                                            <option value="PKR">PKR</option>
+                                            <option value="PLN">PLN</option>
+                                            <option value="PYG">PYG</option>
+                                            <option value="QAR">QAR</option>
+                                            <option value="RON">RON</option>
+                                            <option value="RSD">RSD</option>
+                                            <option value="RUB">RUB</option>
+                                            <option value="RWF">RWF</option>
+                                            <option value="SAR">SAR</option>
+                                            <option value="SBD">SBD</option>
+                                            <option value="SCR">SCR</option>
+                                            <option value="SDG">SDG</option>
+                                            <option value="SEK">SEK</option>
+                                            <option value="SGD">SGD</option>
+                                            <option value="SHP">SHP</option>
+                                            <option value="SLE">SLE</option>
+                                            <option value="SOS">SOS</option>
+                                            <option value="SRD">SRD</option>
+                                            <option value="SSP">SSP</option>
+                                            <option value="STN">STN</option>
+                                            <option value="SYP">SYP</option>
+                                            <option value="SZL">SZL</option>
+                                            <option value="THB">THB</option>
+                                            <option value="TJS">TJS</option>
+                                            <option value="TMT">TMT</option>
+                                            <option value="TND">TND</option>
+                                            <option value="TOP">TOP</option>
+                                            <option value="TRY">TRY</option>
+                                            <option value="TTD">TTD</option>
+                                            <option value="TVD">TVD</option>
+                                            <option value="TWD">TWD</option>
+                                            <option value="TZS">TZS</option>
+                                            <option value="UAH">UAH</option>
+                                            <option value="UGX">UGX</option>
+                                            <option value="USD">USD</option>
+                                            <option value="UYU">UYU</option>
+                                            <option value="UZS">UZS</option>
+                                            <option value="VES">VES</option>
+                                            <option value="VND">VND</option>
+                                            <option value="VUV">VUV</option>
+                                            <option value="WST">WST</option>
+                                            <option value="XAF">XAF</option>
+                                            <option value="XCD">XCD</option>
+                                            <option value="XDR">XDR</option>
+                                            <option value="XOF">XOF</option>
+                                            <option value="XPF">XPF</option>
+                                            <option value="YER">YER</option>
+                                            <option value="ZAR">ZAR</option>
+                                            <option value="ZMW">ZMW</option>
+                                            <option value="ZWL">ZWL</option>
+                                        </select>
+                                    </div>
+                                    <div class="result">
+                                        <div class="rate" id="rate">1 NGN = 0.00131 USD</div>
+
+                                    </div>
+
+                                    <div class="currencysubmit">
+                                        <button type="submit" id="">Fund Amount</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
             </div>
-
-
-            
-        
-           </div>
         </div>
 
-  
+
     </div>
 
 
@@ -387,43 +727,43 @@
 
     <section class="overlay"></section>
 
-<script></script>
+    <script></script>
 
     <script>
         const input_currency = document.querySelector('#input_currency');
-      const output_currency = document.querySelector('#output_currency');
-      const input_amount = document.querySelector('#input_amount');
-      const output_amount = document.querySelector('#output_amount');
-      const exchange = document.querySelector('#exc');
-      const rate = document.querySelector('#rate');
-      
-      input_currency.addEventListener('change', compute);
-      output_currency.addEventListener('change', compute);
-      input_amount.addEventListener('input', compute);
-      output_amount.addEventListener('input', compute);
-      
-      exchange.addEventListener('click', ()=>{
-          const temp = input_currency.value;
-          input_currency.value = output_currency.value;
-          output_currency.value= temp;
-          compute();
-      });
-      
-      function compute(){
-          const input_currency1 = input_currency.value;
-          const output_currency1 = output_currency.value;
-          fetch(`https://api.exchangerate-api.com/v4/latest/${input_currency1}`)
-          .then(res => res.json())
-          .then(res => {
-              const new_rate = res.rates[output_currency1];
-              rate.innerText = `1 ${input_currency1} = ${new_rate} ${output_currency1}`
-              output_amount.value = (input_amount.value * new_rate).toFixed(2);
-          })
-      }
-      
-      compute();
-      
-      </script>
+        const output_currency = document.querySelector('#output_currency');
+        const input_amount = document.querySelector('#input_amount');
+        const output_amount = document.querySelector('#output_amount');
+        const exchange = document.querySelector('#exc');
+        const rate = document.querySelector('#rate');
+
+        input_currency.addEventListener('change', compute);
+        output_currency.addEventListener('change', compute);
+        input_amount.addEventListener('input', compute);
+        output_amount.addEventListener('input', compute);
+
+        exchange.addEventListener('click', () => {
+            const temp = input_currency.value;
+            input_currency.value = output_currency.value;
+            output_currency.value = temp;
+            compute();
+        });
+
+        function compute() {
+            const input_currency1 = input_currency.value;
+            const output_currency1 = output_currency.value;
+            fetch(`https://api.exchangerate-api.com/v4/latest/${input_currency1}`)
+                .then(res => res.json())
+                .then(res => {
+                    const new_rate = res.rates[output_currency1];
+                    rate.innerText = `1 ${input_currency1} = ${new_rate} ${output_currency1}`
+                    output_amount.value = (input_amount.value * new_rate).toFixed(2);
+                })
+        }
+
+        compute();
+
+    </script>
 
 
     <script>
@@ -433,28 +773,28 @@
 
 
 
-const toggleEye = document.querySelector('.toggle-eye');
-const content = document.querySelector('.content');
+        const toggleEye = document.querySelector('.toggle-eye');
+        const content = document.querySelector('.content');
 
-toggleEye.addEventListener('click', function() {
-  if (content.textContent === 'XXX') {
-    const amount = '200,000.00' ;
-    if (amount) {
-      content.textContent = amount;
-      toggleEye.textContent = 'visibility_off';
-      content.classList.remove('hidden');
-      content.classList.add('fade-in');
-    }
-  } else {
-    content.textContent = 'XXX';
-    toggleEye.textContent = 'remove_red_eye';
-    content.classList.add('fade-out');
-    setTimeout(function() {
-      content.classList.add('hidden');
-      content.classList.remove('fade-out');
-    }, 500);
-  }
-});
+        toggleEye.addEventListener('click', function () {
+            if (content.textContent === 'XXX') {
+                const amount = '200,000.00';
+                if (amount) {
+                    content.textContent = amount;
+                    toggleEye.textContent = 'visibility_off';
+                    content.classList.remove('hidden');
+                    content.classList.add('fade-in');
+                }
+            } else {
+                content.textContent = 'XXX';
+                toggleEye.textContent = 'remove_red_eye';
+                content.classList.add('fade-out');
+                setTimeout(function () {
+                    content.classList.add('hidden');
+                    content.classList.remove('fade-out');
+                }, 500);
+            }
+        });
 
 
 
@@ -473,11 +813,11 @@ toggleEye.addEventListener('click', function() {
             navBar.classList.remove("open");
         });
     </script>
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-<script src="script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

@@ -290,7 +290,7 @@ align-items: center;
     gap: 15px;
     align-items: center;
     justify-content: center;
-    border-radius: 9px;
+    border-radius: 7px;
     background-color: white;
     border: 1px solid #fff;
     transition: 0.5s ease-in-out;
@@ -332,7 +332,7 @@ align-items: center;
     gap: 15px;
     align-items: center;
     justify-content: center;
-    border-radius: 9px;
+    border-radius: 7px;
     background-color: white;
     border: 1px solid #fff;
     transition: 0.5s ease-in-out;
@@ -929,7 +929,23 @@ font-family: Inter;
       height: 100%;
      
   }
+  .accountmiddle{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+  }
+.tt{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 
+}
+
+.bottomcard {
+  font-size: 27px;
+
+}
   .converter {
     width: 100%;
   padding: 15px;
@@ -965,6 +981,10 @@ font-family: Inter;
         flex-direction: column;  
     }
      }
+     /* .alink{
+      background: #0e161f;
+      color: white !important;  
+  } */
 
 
      @media screen and (max-width:700px) {
@@ -974,6 +994,11 @@ font-family: Inter;
         .dashboardcontent{
             padding: 0;
         }
+        /* .alink{
+          background: #0e161f;
+          color: white !important;  
+      } */
+  
         .columnbody {
           display: flex;
           gap: 10px;

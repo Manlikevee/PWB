@@ -19,19 +19,35 @@
 </head>
 
 <body>
+  <div id="navlinkovalay"></div>
     <header id="navbar" data-aos="fade-up">
         <div class="container">
             <div class="logo"  onclick="window.location.href = 'index.html'">
                 <img src="Group (1).png" alt=""> PWB
             </div>
 
-            <div class="links">
-                <a href="dashboard.html">Dashboard</a><a href="transactions.html" class="alinks">Transactions</a><a href="">Support</a>
-            </div>
+            <div class="links" id="middlelinks">
+                <a href="dashboard.html">Dashboard</a><a href="transactions.html" class="alink">Transactions</a><a href="">Support</a>
+           
+                <div class="hideme">
+                  <a href="dashboard.html" class="blackboton">Login</a>
+                   <!-- <a href=""><span class="material-symbols-outlined">
+                    logout
+                    </span></a> -->
+                </div>
+            
+              </div>
 
-            <div class="login"onclick="window.location.href = 'dashboard.html'">
+            <div class="login getstarteds"onclick="window.location.href = 'dashboard.html'">
                 Login
             </div>
+
+            <div class="navtoggle" onclick="navtoggler()">
+        
+              <span class="material-symbols-outlined">
+                menu
+                </span>
+          </div>
         </div>
        
     </header>
@@ -186,7 +202,7 @@
 
 
     <section class="overlay"></section>
-
+   
 <script>
     
 

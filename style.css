@@ -38,6 +38,7 @@ body{
 }
 
 header{
+    z-index: 999999999;
     transition: 0.25s ease;
 }
 header .container {
@@ -63,6 +64,8 @@ font-family: 'Jost', sans-serif;
    
     object-fit: cover;
 }
+
+
 header {
     width: 100%;
     position: fixed;
@@ -1003,7 +1006,8 @@ border-radius: 8px;
             justify-content: space-between;
         }
       }
-     
+
+ 
 
       @media screen and (max-width: 600px) {
         .cell {
@@ -1033,3 +1037,103 @@ border-radius: 8px;
           font-weight: normal; /* Remove bold font weight for heading cells on smaller screens */
         }
       }
+
+      .navtoggle{
+        display: none;
+        padding: 9px;
+        background-color: white;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    
+#navlinkovalay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.768);
+    backdrop-filter: blur(3px);
+    z-index: 999999999999999;
+}
+
+.navlinkactive{
+    position: absolute;
+    display: flex !important;
+    flex-direction: column;
+    top: 79px;
+    border-radius: 9px;
+    gap: 10px;
+
+    right: 10px;
+    background: var(--header-bg-color);
+    color: var(--subtitle-color);
+    width: 240px;
+    text-align: center;
+z-index: 999999999999999999999999999;
+background-color: white;
+    padding: 21px;
+    box-shadow: 0 1px 0.625rem 0 hsla(210, 7%, 22%, .06), 0 0.125rem 0.25rem 0 hsla(210, 7%, 22%, .08);
+
+}
+
+#navbar{
+    z-index: 9999999999999999999999999999999999999999999999999999999999999;
+}
+.hideme{
+    display: none;
+}
+      @media screen and (max-width:1000px) {
+
+        .atmimg{
+    width: 90%
+        }
+        .navlinkactiveovalay{
+  
+            display: flex !important;
+            }
+
+            .alink{
+                background-color: transparent;
+                border: 1px solid #070707;
+                color: black !important;
+            }
+            .hideme{
+                display: flex;
+            }
+    
+        .getstarteds{
+            display: none;
+        }
+    
+        .navtoggle{
+            display: flex;
+            background-color: #0C231f;
+            border-radius: 3px;
+            font-size: 15px;
+            border: 1px solid #0C231f;
+    
+        }
+
+    }
+    .hideme{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blackboton{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100%;
+        background-color: #0F0F11;
+        padding: 14px;
+        border-radius: 5px;
+        color: white !important;
+        border: none;
+        transition: 0.6s;
+        cursor: pointer;
+     }
