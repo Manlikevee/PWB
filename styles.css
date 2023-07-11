@@ -986,7 +986,9 @@ font-family: Inter;
       color: white !important;  
   } */
 
-
+  .hideme{
+    display: none;
+}
      @media screen and (max-width:700px) {
         .balancecard{
             flex-direction: column;
