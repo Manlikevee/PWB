@@ -622,14 +622,17 @@ gap: 10px;
   display: flex;
   gap: 6px;
 }
+
+
   .tabletop input {
   font-family: inter;
     padding: 0.52rem;
     font-size: 14px;
     border-radius: 0.2rem;
     color: #222222;
+    outline: navajowhite;
     width: 100%;
-    border: 1px solid rgba(114, 114, 114, 0.626);
+    border: 1px solid rgb(225, 225, 225);
     transition: all .25s ease 0s;
 }
 
@@ -889,12 +892,16 @@ gap: 10px;
   }
   
   
-  ::-webkit-input-placeholder { color: 
-    #0F0F11;
+  ::-webkit-input-placeholder {
+    color: #424243;
+font-family: Inter;
   } 
-  :-moz-placeholder { color:#0F0F11; }
-  ::-moz-placeholder { color: #0F0F11; }
-  :-ms-input-placeholder { color: #0F0F11; }
+  :-moz-placeholder {     color: #424243;
+    font-family: Inter; }
+  ::-moz-placeholder {     color: #424243;
+    font-family: Inter; }
+  :-ms-input-placeholder {    color: #424243;
+    font-family: Inter; }
   
   
   .recenttext{

@@ -784,6 +784,7 @@ text-align: left;
             width: 94%;
         }
 
+       
         .loginbox {
             margin-top: 20px;
             box-shadow: 0 0 4px #e6e6e6;
@@ -861,14 +862,77 @@ cursor: pointer;
       .row:hover{
 background-color: #f4f2f2;
       }
-
+.ds .success{
+    width: 100%;
+    background-color: transparent;
+}
       .success{
         color: #155724;
+        background: #0080001A;
+width: fit-content;
         font-weight: 600;
+        font-family: poppins;
+        padding: 4px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 13px !important;
+        color: #008000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
       }
 
       .error{
+
+        width: fit-content;
+        font-weight: 600;
+        font-family: poppins;
+        padding: 4px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 13px !important;
+      
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
         color: crimson;
+      
+      }
+
+      .pend{
+        padding: 4px;
+width: fit-content;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 5px;
+        background-color:#ffdb7eb6; 
+        color: #7b6328;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      .errors{
+        padding: 4px;
+        width: fit-content;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        border-radius: 5px;
+
+                font-weight: 500;
+                line-height: normal;
+        background-color: rgb(235, 200, 200);
+        color: rgb(151, 20, 20);
+        font-weight: 500;
+        font-family: Inter;
       }
       .tabledata{
         display: flex;
@@ -900,10 +964,46 @@ background-color: #f4f2f2;
         align-items: center;
       }
       
-      input {
-        margin-bottom: 10px;
+      .res{
+        display: none;
       }
+      @media screen and (max-width: 900px) {
+        .res{
+            display: flex;
+            color: #444;
+            font-size: 14px;
+            font-family: poppins;
+            font-weight: 600;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding-block: 0px;
+        }
+        .ds .success{
+            width: fit-content;
+        }
+        .row{
+flex-direction: column;
+box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
+border-radius: 8px;
+        }
+        .heading{
+            display: none;
+        }
+        #table{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-auto-rows: 1fr;
+            grid-gap: 10px;
+            gap: 10px;
+        }
+        .cell{
       
+          
+            justify-content: space-between;
+        }
+      }
+     
 
       @media screen and (max-width: 600px) {
         .cell {
@@ -925,7 +1025,9 @@ background-color: #f4f2f2;
             display: flex;
             padding: 10px;
         }
-   
+        .heading{
+            display: none;
+        }
       
         .heading .cell {
           font-weight: normal; /* Remove bold font weight for heading cells on smaller screens */
