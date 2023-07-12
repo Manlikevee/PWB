@@ -869,6 +869,15 @@ gap: 10px;
   
   }
   
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    display: flex;
+}
+
   .currencyfield input:focus{
     background: transparent;
     outline: transparent;
@@ -1074,3 +1083,219 @@ font-family: Inter;
         border: 1px solid rgb(232, 232, 232);
       }
   }
+
+  .tabledata input{
+    border: 1px solid rgb(222, 222, 222);
+    outline: navajowhite;
+    font-size: 15px;
+    font-family: poppins;
+  }
+.avb{
+font-family: poppins;
+  width: 60%;
+  margin: auto;
+  font-weight: 900;
+}
+  .availablebalance{
+    border: 1px solid rgb(172, 172, 172);
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 4px;
+    background-color: #f6f6f6;
+    width: 60%;
+    margin: auto;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    gap: 4px;
+    font-weight: 600;
+    line-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
+ }
+
+ .eye{
+  cursor: pointer;
+ }
+    
+  .tabledata  ::-webkit-input-placeholder {
+    color: #191919;
+font-family: poppins;
+  } 
+  .tabledata :-moz-placeholder {         color: #191919;
+    font-family: poppins; }
+    .tabledata ::-moz-placeholder {        color: #191919;
+    font-family: poppins; }
+    .tabledata  :-ms-input-placeholder {        color: #191919;
+    font-family: poppins; }
+  
+
+  .tabledata .loginflex{
+    width: 100%;
+  }
+
+  .datatable{
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+  }
+
+  .tabledata .loginflex label {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'poppins';
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2b2b2bcc;
+}
+
+
+@media screen and (max-width:900px) {
+  .datatable{
+      width: 100%;
+  }
+  .tabledata {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .datatable .balancecard {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+  
+}
+
+
+@media screen and (max-width:700px) {
+  .availablebalance{
+    width: 100%;
+    font-size: 20px;
+    font-style: normal;
+    display: flex;
+    gap: 4px;
+    font-weight: 600;
+    line-height: 20px;
+    display: flex;
+    padding: 10px;
+  }
+  .avb{
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
+.pin-form {
+  display: block;
+}
+
+.loading-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  margin-top: 3px;
+  font-size: 16px;
+
+  font-weight: 600;
+  font-family: 'poppins';
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #161616cc;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  width: 0;
+  background-color: #3366ff;
+  transition: width 1.9s ease;
+}
+
+.extra-text {
+  display: none;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+
+
+.bottomtext{
+  width: 100%;
+  padding: 10px;
+  background-color: #e2fea2;
+  border-end-end-radius: 9px;
+  border-end-start-radius: 9px;
+  font-size: 13px;
+  font-weight: 300;
+  color: black;
+}
+
+.availabletitle{
+  padding: 15px;
+  font-size: small;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.availabletitle img{
+  height: 40px;
+  object-fit: cover;
+}
+
+.availableamount{
+  margin-top: -10px;
+  padding: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: start;
+}
+
+
+
