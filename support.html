@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWBFinance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="description"
+        content="Unlock your financial potential with our trusted finance company. We offer expert guidance and innovative solutions tailored to your unique needs. From investment strategies to wealth management and financial planning, our team of professionals is dedicated to helping you achieve your financial goals. Discover the power of financial success and secure your future with our reliable services. Contact us today and embark on a path to financial prosperity.">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="navlinkovalay"></div>
+    <header id="navbar" data-aos="fade-up">
+        <div class="container">
+            <div class="logo"  onclick="window.location.href = 'index.html'">
+                <img src="Group (1).png" alt=""> PWB
+            </div>
+
+            <div class="links" id="middlelinks">
+                <a href="dashboard.html">Dashboard</a><a href="transactions.html" class="alink">Transactions</a><a href="">Support</a>
+           
+                <div class="hideme">
+                  <a href="dashboard.html" class="blackboton">Login</a>
+                   <!-- <a href=""><span class="material-symbols-outlined">
+                    logout
+                    </span></a> -->
+                </div>
+            
+              </div>
+
+            <div class="login getstarteds"onclick="window.location.href = 'dashboard.html'">
+                Login
+            </div>
+
+            <div class="navtoggle" onclick="navtoggler()">
+        
+              <span class="material-symbols-outlined">
+                menu
+                </span>
+          </div>
+        </div>
+       
+    </header>
+    <style>
+  
+    
+        #navbar{
+            background-color: white;
+        }
+    </style>
+  
+   
+    <div class="maincontent ">
+   
+        <div class="dashboarddata">
+           <div class="dashboardcontent">
+            <br>
+            <br>
+    
+<div class="backticks">
+
+
+ 
+</div>
+
+
+
+
+<div class="profiletip"  data-aos="fade-up" style="background-color: transparent; box-shadow: none; padding: 0;">
+  <div class="dashboardtips">
+    <style>
+      .card_box {
+        font-family: poppins;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .crystalcard2 {
+        background: #FFFFFF;
+        padding: 36px;
+        height: auto;
+    }
+    .crystalcardnumber2 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 56px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    
+    .re, .crystalsmallcard {
+      border-radius: 7px;
+  
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+        box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
+    }
+    .re {
+        box-shadow: 0px 3.650273084640503px 14.601092338562012px 0px #0000000D;
+    }
+    .crystalcardtext2 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #007146;
+        margin-bottom: 10px;
+    }
+    
+    .crystalcardnumber2 {
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 66px;
+        letter-spacing: 0px;
+        text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .botomd {
+        display: flex;
+        grid-gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+    }
+    
+    .sd12, .sd13{
+      font-family: poppins;
+      font-size: small;
+    }
+    @media only screen and (max-width: 690px){
+    
+      .crystalcardnumber2 {
+        font-size: 27px;
+    }
+    .re {
+        border-radius: 5px;
+        width: 100%;
+        margin: auto;
+    }
+    .re {
+        border-radius: 5px;
+    }
+    }
+    .addnew button{
+      border-radius: 6px;
+    background: #151515;
+    padding: 13px;
+    width: 90px;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+    color: white;
+    border: 1px solid black;
+    font-family: poppins;
+    }
+    </style>
+    
+      <div class="card_box" data-aos="fade-left" >
+        <div class="crystalcard2 re" data-title="Naira investment overview" data-intro="an overview of all naira investment total and number">
+        <div class="crystalcardtext2">  Open Tickets </div>
+        <div class="crystalcardnumber2">0           <div class="trend green">
+          <span class="material-symbols-outlined">
+            pending_actions
+            </span>
+      </div>   </div>
+        <div class="botomd">
+            <div class="sd12">Last Updated:</div>
+            <div class="sd13">2 Minutes Ago</div>
+        </div>
+    </div>
+    
+        <div class="crystalcard2 re" data-title="dollar investment overview" data-intro="an overview of all dollar investment total and number">
+        <div class="crystalcardtext2">  Closed Tickets </div>
+        <div class="crystalcardnumber2">0       <div class="trends ">
+          <span class="material-symbols-outlined">
+            pending_actions
+            </span>
+      </div></div>
+        <div class="botomd">
+            <div class="sd12">Last Updated:</div>
+            <div class="sd13">2 Minutes Ago</div>
+        </div>
+    </div>
+    
+    
+    </div>
+    </div>
+</div>
+
+
+
+<br>
+<div class="addnew" data-aos="fade-left">
+  <button>Add New</button>
+</div>
+<br> 
+
+
+<div class="tabledata" data-aos="fade-up">
+  <br>
+  <div class="tabletop">
+    <div class="name">TRANSACTIONS</div>
+    <div>
+      <!-- <label for="accountFilter">Account:</label> -->
+      <input type="text" id="accountFilter" placeholder="Account Number" />
+
+      <input type="text" id="amountFilter"  placeholder="Amount" hidden/>
+    </div>
+  </div>
+
+<br>
+
+<div id="table">
+    <div class="row heading">
+      <div class="cell">Date</div>
+      <div class="cell">Reference</div>
+      <div class="cell">Affected Area</div>
+      <div class="cell">Last Updated</div>
+      <div class="cell">Status</div>
+    </div>
+    <div class="row" onclick="window.location.href = 'transactiondetailgreen.html'">
+      <div class="cell"> <div class="res">Date</div> 2023-07-10</div>
+      <div class="cell"><div class="res">Reference</div> <div class="imgbx"><img src="favicon-16x16.png" alt=""> Victor Odah</div></div>
+      <div class="cell"><div class="res">Affected Area</div> Online</div>
+      <div class="cell"><div class="res">Last Updated</div> John Boyega</div>
+      <div class="cell"><div class="res">Status</div> <span class="pend">Success</span></div>
+    </div>
+
+
+   
+    <!-- Add more rows here -->
+  </div>
+</div>
+
+ 
+  
+            
+        
+           </div>
+        </div>
+
+  
+    </div>
+
+
+
+
+
+
+    <section class="overlay"></section>
+   
+<script>
+    
+
+
+// Retrieve filter inputs
+const accountFilterInput = document.getElementById('accountFilter');
+const amountFilterInput = document.getElementById('amountFilter');
+
+// Add event listeners to filter inputs
+accountFilterInput.addEventListener('input', filterTable);
+amountFilterInput.addEventListener('input', filterTable);
+
+// Function to filter the table based on user input
+function filterTable() {
+  const accountFilter = accountFilterInput.value.toLowerCase();
+  const amountFilter = amountFilterInput.value;
+
+  // Retrieve all table rows
+  const rows = document.getElementsByClassName('row');
+
+  // Loop through rows and hide/show based on filter criteria
+  Array.from(rows).forEach(row => {
+    const accountCell = row.querySelector('.cell:nth-child(2)');
+    const amountCell = row.querySelector('.cell:nth-child(3)');
+
+    // Hide the row if it doesn't match the filter criteria
+    if (
+      (accountFilter && !accountCell.textContent.toLowerCase().includes(accountFilter)) ||
+      (amountFilter && Number(amountCell.textContent) !== Number(amountFilter))
+    ) {
+      row.style.display = 'none';
+    } else {
+      row.style.display = 'flex';
+    }
+  });
+}
+
+
+
+
+
+    function formatDate(date) {
+        const monthNames = [
+        'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+      ];
+
+      const day = date.getDate();
+      let daySuffix;
+
+      if (day >= 11 && day <= 13) {
+        daySuffix = 'th';
+      } else {
+        switch (day % 10) {
+          case 1: daySuffix = 'st'; break;
+          case 2: daySuffix = 'nd'; break;
+          case 3: daySuffix = 'rd'; break;
+          default: daySuffix = 'th';
+        }
+      }
+
+      const year = date.getFullYear();
+      const hour = date.getHours();
+      const minute = date.getMinutes();
+      const meridiem = (hour < 12) ? 'AM' : 'PM';
+
+      const formattedDate = `${monthNames[date.getMonth()]} ${day}${daySuffix}, ${year}, ${hour}:${minute.toString().padStart(2, '0')} ${meridiem}`;
+
+      return formattedDate;
+    }
+
+    function displayDateTime() {
+      const currentDate = new Date();
+      const formattedDate = formatDate(currentDate);
+
+      const datetimeElement = document.getElementById('datetime');
+      datetimeElement.textContent = formattedDate;
+    }
+
+    window.onload = displayDateTime;
+
+
+</script>
+
+
+    <script>
+
+const toggleEye = document.querySelector('.toggle-eye');
+const content = document.querySelector('.content');
+
+toggleEye.addEventListener('click', function() {
+  if (content.textContent === 'XXX') {
+    const amount = '200,000' ;
+    if (amount) {
+      content.textContent = amount;
+      toggleEye.textContent = 'visibility_off';
+      content.classList.remove('hidden');
+      content.classList.add('fade-in');
+    }
+  } else {
+    content.textContent = 'XXX';
+    toggleEye.textContent = 'remove_red_eye';
+    content.classList.add('fade-out');
+    setTimeout(function() {
+      content.classList.add('hidden');
+      content.classList.remove('fade-out');
+    }, 500);
+  }
+});
+
+
+
+
+        const navBar = document.querySelector("nav"),
+            menuBtns = document.querySelectorAll(".menu-icon"),
+            overlay = document.querySelector(".overlay");
+
+        menuBtns.forEach((menuBtn) => {
+            menuBtn.addEventListener("click", () => {
+                navBar.classList.toggle("open");
+            });
+        });
+
+        overlay.addEventListener("click", () => {
+            navBar.classList.remove("open");
+        });
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

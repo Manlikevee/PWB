@@ -23,6 +23,18 @@ body{
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
+.ini{
+    width: 100%;
+}
+
+.ini .fas {
+    position: relative;
+    right: -92%;
+    font-size: 16px;
+    top: -33px;
+    opacity: 0.5;
+    cursor: pointer;
+}
 
 ::-webkit-scrollbar-thumb {
     background-color: darkgrey;
@@ -1273,3 +1285,191 @@ margin-top: 10px;
         display: block;
       }
       
+
+
+
+
+
+
+
+
+
+
+
+
+      .contacttitle{
+        margin-top: 10px;
+        display: flex;
+        
+        gap: 8px;
+        width: 100%;
+        color: #222;
+    font-size: 19px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    }
+    
+    .reddot{
+        background: #EB3238;
+        padding: 10px;
+    }
+    
+    .contactflex{
+        display: flex;
+    
+        gap: 20px;
+    }
+    
+    .wordings{
+    margin-top: 15px;
+        color: var(--gray-1, #333);
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    
+    .to{
+        color: var(--gray-1, #333);
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+    
+    
+    .bankeasy{
+     background-image: url('masksoff/Rectangle\ 37\ \(3\).png') ,url('masksoff/Rectangle\ 36\ \(2\).png');   
+    }
+    
+    .splitbutton{
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .splitbutton a{
+        display: inline-flex;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 2px;
+    background: #DD1115;
+    border: 1px solid #DD1115;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+    }
+    
+    .splitbutton a:hover{
+        display: inline-flex;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 2px;
+    background: #fb191c;
+    border: 1px solid #DD1115;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+    }
+    
+    .splitbutton a:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #ccc;
+    }
+    
+    .bankeasys .sectwo img{
+        width: 90%;
+        margin: auto;
+    }
+    .bankeasys ul{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contactsection {
+        background-image: url('Rectangle\ 125\ \(10\).png');
+        height: 70vh;
+    }
+    
+    .contactflex {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .contacttext,
+    .contactform {
+        width: 100%;
+    }
+    
+    .bankeasys ul li{
+        list-style-type: none; 
+        display: flex;
+        gap: 3px;
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    
+    .bankeasys ul li:before {
+        content: "●"; /* Unicode character for a bullet point */
+        color: red; /* Set the color to red */
+        font-size: 24px; /* Adjust the size of the bullet point */
+        margin-right: 5px; /* Add some spacing between the bullet point and the list item */
+      }
+    @media screen and (max-width: 1000px) {
+        .contactflex{
+            display: flex;
+        flex-direction: column;
+            gap: 20px;
+        }
+        
+    }
+    
+    .contactform input{
+        border: 1px solid rgb(222, 222, 222);
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #CCC;
+        background: #fff;
+      
+        box-shadow: 0px 0px 0px #fff inset;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .contactflex label{
+        color: var(--gray-1, #333);
+        font-size: 14px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .contactflex a{
+        color: #081F27;
+        font-weight: 300;
+        text-decoration: none;
+    }

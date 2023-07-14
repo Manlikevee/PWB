@@ -74,7 +74,8 @@
 </div>
 
 
-
+<form action="" method="POST" >
+  {% csrf_token %}
 <div class="tabledata datatable" data-aos="fade-up">
 
 
@@ -89,12 +90,12 @@
 <div class="balancecard">
   <div class="loginflex">
     <label for="">First Name</label>
-    <input type="text" name="username" id="id_firstname" placeholder="Enter Your Account Number">
+    <input type="text" name="first_name" id="id_firstname" placeholder="Enter Your First Name" required>
   </div>
   
   <div class="loginflex">
     <label for="">Last Name</label>
-    <input type="text" name="username" id="id_lastname" placeholder="Enter Your Account Number">
+    <input type="text" name="last_name" id="id_lastname" placeholder="Enter Your Last Name" required>
   </div>
 </div>
 
@@ -103,14 +104,14 @@
 <div class="balancecard">
 <div class="loginflex">
   <label for="">Email</label>
-  <input type="text" name="username" id="id_email" placeholder="Enter Your Account Number">
+  <input type="email" name="email" id="id_email" placeholder="Enter Your Email" required>
 </div>
 
 
 <div class="loginflex">
   <label for="">Account Number</label>
   <div style="width: 100%; display:flex; align-items:center;">
-    <input type="number" value="18%" name="username" id="id_username" readonly="">
+    <input type="number" value="18%" name="username" id="id_username" readonly="" required>
     <div style="
     cursor: pointer;
     padding: 3px;
@@ -135,13 +136,13 @@
 <div class="balancecard">
 <div class="loginflex">
   <label for="">Credit Amount</label>
-  <input type="tel" name="username" id="id_credit" placeholder="Enter Your Account Number" value="2000000">
+  <input type="tel" name="credit_amount" id="id_credit_amount" placeholder="Enter a credit amount" value="2000000" required>
 </div>
 
 
 <div class="loginflex">
   <label for="">Narration</label>
-  <input type="text" name="username" id="id_narration" placeholder="Enter Your Account Number" value="Fund Transfer">
+  <input type="text" name="narration" id="id_narration" required placeholder="Enter a valid narration" value="Fund Transfer">
 </div>
 
 </div>
@@ -160,7 +161,7 @@
 </div>
 
 </div>
-
+</form>
  
   
             

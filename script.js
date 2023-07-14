@@ -18,8 +18,7 @@ window.addEventListener('scroll', handleScroll);
 // Initial check on page load
 handleScroll();
 
-
-  AOS.init({
+AOS.init({
     duration: 1200,  // Animation duration in milliseconds
     offset: 120,  // Offset (in pixels) from the original trigger point
     easing: 'ease-in-out',  // Easing function for the animation
