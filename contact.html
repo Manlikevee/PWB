@@ -53,7 +53,7 @@
 
     </header>
 
-    <div class="herosection abts">
+    <div class="herosection contactflex abts">
         <div class="container">
             <div class="twosides">
                 <div class="sidea about">
@@ -66,18 +66,17 @@
                     <div class="logo">
                         <img src="Group (1).png" alt="">
                     </div>
-                    <div class="topsection" data-aos="slide-up">
+                    <div class="topsection" data-aos="slide-right">
                         <h1>
-                            Tailored banking solutions. Secure. Exceptional service.
+                            Tailored Banking Solutions with Unparalleled Security and Exceptional Service.
                         </h1>
                     </div>
-                    <div class="bottomsection" data-aos="flip-up">
+                    <div class="bottomsection" data-aos="slide-left">
 
-                        Experience secure, tailored banking with exceptional service. We prioritize your financial goals
-                        and achieve success together. </div>
+                        Please feel free to contact us for further information or to discuss your specific banking needs. We are committed to providing you with personalized solutions and ensuring the highest level of security, all while delivering exceptional service. Our dedicated team is here to assist you every step of the way. Reach out to us today to experience banking at its finest. </div>
 
-                    <div class="getstarted login">
-                        Get Started
+                    <div class="getstarted login" onclick="window.location.href = '#contactfl'" >
+                      Send Us A Message
                     </div>
                 </div>
 
@@ -86,8 +85,16 @@
     </div>
  
 
-    <div class="container">
-        <div class="contactflex">
+    <form action="" method="POST" style="
+        width:100%; height: 100%;">
+    {% csrf_token %}
+
+    <div class="container" id="contactfl">
+
+        <br>
+<br>
+<br>
+        <div class="contactflex" >
             <div class="contacttext">
         <div class="contacttitle">
             <div class="reddot"></div>  <div class="sumtext">How can we assist you?</div>
@@ -140,7 +147,10 @@
         <p>
          <a href="
          https://www.google.com/maps/dir/6.4845164,3.3526773/The+SMAT+Place,+Tapa+House,+Imam+Dauda,+44+Abosede+Kuboye+Cres,+Surulere+101241,+Lagos,+Nigeria/@6.4842491,3.3505563,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x103b8c097389e891:0xbf38477be5143794!2m2!1d3.353228!2d6.4843897?entry=ttu" >
-         1st Floor, Tapa House, 3/5, Imam Dauda Street, Surulere, Lagos.
+         987 Financial Avenue
+         Suite 456
+         Banker's District
+         New York, NY 10005
         </a> 
         </p>
         
@@ -164,8 +174,8 @@
         </div>
         
         <p>
-            <a href="https://wa.link/03z3wh"  target="_blank">
-                +2348092925955 
+            <a href=""  target="_blank">
+                +(917)410-1767
             </a>
         </p>
         
@@ -175,63 +185,45 @@
             <div class="contactform">
              
                 <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
+                    <label for="">Name</label>
+                    <input type="text" name="username" id="id_username" placeholder="Enter Your Name">
                 </div>
 
                 
                 <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="id_username" placeholder="Enter Your Email">
                 </div>
 
                 
                 <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
+                    <label for="">Phone Number</label>
+                    <input type="tel" name="username" id="id_username" placeholder="Enter Your Phone Number">
                 </div>
 
                 
                 <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
-                </div>
-
-
-                
-                <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
+                    <label for="">Contact Reason</label>
+                    <input type="text" name="reason" id="id_username" placeholder="Enter Your Contact Reason">
                 </div>
 
 
                 
                 <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
+                    <label for="">Message</label>
+<textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
 
-
-                
                 <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
+                    <button type="submit">Submit</button>
                 </div>
-
-
-                
-                <div class="loginflex">
-                    <label for="">Account Number</label>
-                    <input type="text" name="username" id="id_username" placeholder="Enter Your Account Number">
-                </div>
-
 
             </div>
         </div>
         
         </div>
 
-
+    </form>
   
 
 
@@ -267,6 +259,196 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="script.js"></script>
+
+
+    <style>
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 10px;
+      }
+
+      .video-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        background-color: #f0f0f0;
+        cursor: pointer;
+      }
+
+      .video-card:hover {
+        background-color: #e0e0e0;
+      }
+
+      .video-title {
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      /* Modal Overlay Styles */
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .modal-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 640px;
+        max-width: 90%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .modal-content iframe {
+        width: 100%;
+        height: 360px;
+      }
+    
+    </style>
+
+
+<div class="video-grid" id="video-grid"></div>
+
+<!-- Modal Overlay -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div id="player"></div>
+  </div>
+</div>
+<script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    
+    <!-- <script>
+ 
+// Load the YouTube IFrame Player API asynchronously
+function loadYouTubeAPI() {
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+// Handle API loaded event
+function onYouTubeIframeAPIReady() {
+  // Fetch YouTube videos using API
+  fetchYouTubeVideos();
+}
+
+// Fetch YouTube videos using YouTube Data API
+// Fetch YouTube videos using YouTube Data API
+function fetchYouTubeVideos() {
+  var apiKey = 'AIzaSyDUhvR8IEtvjiu42gnSMSO2kzAFdLES1Kw';
+  var channelId = 'UCyMBZdJ_f5FV1XSCFIE3piA';
+  var maxResults = 10; // Change this value to display more or fewer videos
+
+  var apiUrl =
+    'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=' +
+    channelId +
+    '&maxResults=' +
+    maxResults +
+    '&key=' +
+    apiKey;
+
+  fetch(apiUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      displayVideos(data.items);
+    })
+    .catch(function (error) {
+      console.log('Error fetching YouTube videos:', error);
+    });
+}
+
+// Display YouTube videos on the page
+function displayVideos(videos) {
+  var videoGrid = document.getElementById('video-grid');
+
+  videos.forEach(function (video) {
+    var videoId = video.id.videoId;
+    var videoTitle = video.snippet.title;
+    var videoThumbnail = video.snippet.thumbnails.medium.url;
+
+    var videoCard = document.createElement('div');
+    videoCard.className = 'video-card';
+
+    var thumbnailImg = document.createElement('img');
+    thumbnailImg.src = videoThumbnail;
+    thumbnailImg.alt = videoTitle;
+    thumbnailImg.addEventListener('click', function () {
+      openVideoModal(videoId);
+    });
+
+    var titleElement = document.createElement('p');
+    titleElement.className = 'video-title';
+    titleElement.textContent = videoTitle;
+
+    videoCard.appendChild(thumbnailImg);
+    videoCard.appendChild(titleElement);
+
+    videoGrid.appendChild(videoCard);
+  });
+}
+
+// Open video in modal overlay
+function openVideoModal(videoId) {
+  var modalOverlay = document.getElementById('modal-overlay');
+  var modalContent = document.querySelector('.modal-content');
+  var closeButton = document.querySelector('.close-button');
+
+  var playerDiv = document.createElement('div');
+  playerDiv.id = 'player';
+
+  modalContent.appendChild(playerDiv);
+  modalOverlay.style.display = 'block';
+
+  // Create and initialize YouTube player
+  var player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    videoId: videoId,
+  });
+
+  // Close the modal overlay when close button is clicked
+  closeButton.addEventListener('click', function () {
+    modalContent.removeChild(playerDiv);
+    modalOverlay.style.display = 'none';
+    player.destroy();
+  });
+
+  // Close the modal overlay when user clicks outside the content area
+  window.addEventListener('click', function (event) {
+    if (event.target === modalOverlay) {
+      modalContent.removeChild(playerDiv);
+      modalOverlay.style.display = 'none';
+      player.destroy();
+    }
+  });
+}
+
+// Load YouTube API when the page has finished loading
+window.addEventListener('load', loadYouTubeAPI);
+
+
+
+
+    </script> -->
+
 </body>
 
 </html>
